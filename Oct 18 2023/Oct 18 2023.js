@@ -130,26 +130,71 @@ console.log('')
 
 /*Codewars Challenge*/
 //1.
-console.log('')
-console.log('')
+console.log('You have joined an undeground pokemon leauge. In this league, trainers can use any number of pokemon. Print to the console "Pikachu I choose you" x times where x is the number of pokemon the trainer you are battling has in their party')
+function poke(num) {
+    for(let i = 1; i <= num; i++) {
+        console.log(`pikachu number ${i}, I choose you!`)
+    }
+}
+poke(3)
 console.log('')
 
 //2.
-console.log('')
-console.log('')
+console.log('Nathan loves cycling. Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.Write a function where you are given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.')
+function hydrate(hours) {
+    console.log(`while cycling for ${hours} hours, you will need to hydrate with ${Math.round(hours * 0.5)} liters of water`)
+}
+
+hydrate(11)
 console.log('')
 
 //3.
-console.log('')
-console.log('')
+console.log('filter the number.  Oh, no! The number has been mixed up with the text. You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.  Your goal is to retrieve the number from the text, can you return the number back to its original state?')
+function retrieveNum(str) {
+    let total = [];
+    for(let i = 0; i < str.length; i++) {
+        if(str[i].match(/[0-9]/g)) {
+            total.push(str[i])
+        }
+    }
+    console.log(total)
+}
+retrieveNum('h3ll0')
 console.log('')
 
 //4.
-console.log('')
-console.log('')
+console.log('Return Negtive.  You are given a number and have to make it negative. Include edge case if the number is 0')
+function returnNegative(num) {
+    if(num === 0) {
+        console.log(0)
+    }
+    else if(num < 0) {
+        console.log(num)
+    }
+    else {
+        console.log(num * -1)
+    }
+
+}
+returnNegative(7)
 console.log('')
 
 //5.
-console.log('')
-console.log('')
+console.log('There was a test in your class and you passed it. Congratulations! But you\'re an ambitious person. You want to know if you\'re better than the average student in your class. You receive an array with your peers\' test scores. Now calculate the average of the class points and compare your score to the average. Return True if you\'re better, else False!')
+function whosBetter(myScore, arr) {
+    let classAverage = Math.round((arr.reduce((a, b) => a + b, 0)), 0) / arr.length
+    if(myScore > classAverage) {
+        console.log('my score: ' + myScore)
+        console.log('class avrage: ' + classAverage)
+        console.log(true)
+    }
+    else {
+        console.log('my score: ' + myScore)
+        console.log('class avrage: ' + classAverage)
+        console.log(false)
+    }
+}
+whosBetter([98], [75, 69, 82, 75, 75, 91])
+whosBetter([75], [75, 69, 82, 75, 75, 91])
+
 console.log('')
