@@ -1,4 +1,5 @@
-/*ANKi Review*/
+/*ANKI Review: */
+console.log('ANKI Review:')
 //1.
 console.log('')
 console.log('')
@@ -51,7 +52,8 @@ console.log('')
 
 
 
-/*Codewars Challenge*/
+/*Codewars Challenges*/
+console.log('Codewars Challenges')
 //1.
 console.log('')
 console.log('')
