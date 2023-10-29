@@ -92,26 +92,87 @@ console.log('')
 /*Codewars Challenge*/
 console.log('Codewars Challenge')
 //1.
-console.log('')
-console.log('')
-console.log('')
-
+console.log('Multiple of 3 and 5')
+function sumOfMultiples(num) {
+    let sum = 0;
+    for(let i = 0; i < num; i++) {
+        if(i % 5 === 0 || i % 3 === 0) {
+            sum += i
+        }
+    }
+    console.log(sum)
+}
+sumOfMultiples(10)
 //2.
-console.log('')
-console.log('')
+console.log('Total amount of points')
+console.log('Write a function that takes a collection ( a set of points, our and the versus team) and returns the number of points our team (x) got in the championship by the rules given here: if x > y: 3 points (win) if x < y: 0 points (loss) if x = y: 1 point (tie)')
+
+function usOrThem(arr) {
+    for(let i = 0; i < arr.length; i++) {
+        
+        if(arr[i][0] === arr[i][2]) {
+            console.log('tie')
+        }
+        else if(arr[i][0] > arr[i][2] || arr[i][0] >= 3) {
+            console.log('win')
+        }
+        else if(arr[i][0] < arr[i][2] || arr[i][2] >= 3) {
+            console.log('lose')
+        }
+    }
+}
+usOrThem(["3:2"])
 console.log('')
 
 //3.
-console.log('')
-console.log('')
+console.log('sum of diff in array')
+console.log('Add the differences between consecutive pairs in the array in decending order')
+function sumOfDiff(arr) {
+    //sort the array in decending order
+    arr.sort((a, b) => b - a);
+    let total = 0;
+    for(let i = 0; i < arr.length - 1; i++) {
+        total += arr[i] - arr[i + 1]
+    }
+    console.log(total)
+}
+
+sumOfDiff([2, 1, 10])
 console.log('')
 
 //4.
-console.log('')
-console.log('')
+console.log('going to the cimema')
+function cinema(card, ticket, percent) {
+    let A = 0; //number of tickets purchased
+    let B = card;
+    let visits = 0
+
+    while(Math.ceil(B) > Math.ceil(A)) {
+        visits++
+        A += ticket * percent
+        B += Math.pow(percent, visits)
+    }
+
+    console.log(visits)
+}
+cinema(500, 10, .9)
 console.log('')
 
 //5.
-console.log('')
-console.log('')
+console.log('count characters in a string')
+function count(str) {
+    let result = [];
+    for(let i = 0; i < str.length; i++) {
+        let characters = str.charAt(i);
+        if(result[characters]) {
+            result[characters]++
+        }
+        else {
+            result[characters] = 1
+        }
+
+    }
+    console.log(result)
+}
+count('hello')
 console.log('')
