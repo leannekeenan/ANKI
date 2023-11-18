@@ -41,13 +41,13 @@ console.log('A process of semantically formatting the properties of a CSS styles
 console.log('')
 
 //9.
-console.log('9. benedit of short selectors')
+console.log('9. benefit of short selectors')
 console.log('Makes code easier to read, minimizes specificity, improves inheritance and efficiency')
 console.log('')
 
 //10.
 console.log('10. golden rule of front end development')
-console.log('Rule of seperation of concerns.  Keep content with HTML, design with CSS and function with JS')
+console.log('Rule of seperation of concerns. Keep content with HTML, design with CSS and function with JS')
 console.log('')
 
 
@@ -55,26 +55,77 @@ console.log('')
 /*Codewars Challenges*/
 console.log('Codewars Challenges')
 //1.
-console.log('1. ')
-console.log('')
+console.log('1. consonant count')
+console.log('create a function that takes in a string and retrurns the number of consonants')
+function consonants(str) {
+    let consonant = /[bcdfghjklmnpqrstvwxyz]/ig;
+    let count = 0
+    for(let i = 0; i < str.length; i++) {
+        if(str[i].match(consonant)) {
+            count++
+        }
+    }
+    console.log(count)
+}
+
+consonants('teo')
 console.log('')
 
 //2.
-console.log('2. ')
-console.log('')
+console.log('2. find min and max values of a list')
+console.log('make two functions, each receiving a list of integers as a parameter and return the largest and smallest numbers in the array respectively')
+
+ 
+    function findMin(arr) {
+        console.log(Math.min(...arr))
+    }
+    
+    function findMax(arr) {
+        console.log(Math.max(...arr))
+    }
+findMax(  [1, 2, 3, 4, 5])
+findMin(  [1, 2, 3, 4, 5])
+
+function findMinAndMax(arr) {
+    console.log(Math.min(...arr) + ', ' + Math.max(...arr))
+}
+    
+findMinAndMax( [1, 2, 3, 4, 5])
+
 console.log('')
 
 //3.
-console.log('3. ')
-console.log('')
+console.log('3. youre a square')
+console.log('given an integer, determine if it a square number')
+function square(num) {
+    if(Math.sqrt(num) % 1 === 0) {
+        console.log(Math.sqrt(num))
+    }
+    else {
+        console.log('Not a Square')
+    }
+}
+square(25)
+square(24)
 console.log('')
 
 //4.
-console.log('4. ')
-console.log('')
+console.log('4. Filter out the geese')
+console.log('you are given an array of geese types.  Create a function that removes any of the geese from the provided array from the parameter array ')
+function filterGeese(arr) {
+    let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    console.log(arr.filter(birds => !geese.includes(birds)))
+
+}
+filterGeese(['blackbird', "African"])
 console.log('')
 
 //5.
-console.log('5. ')
-console.log('')
+console.log('5. max multiples')
+console.log('Given a divisor and a bound, return the largest integer greater than 0, less than the bound and divisible by the divisor')
+function maxMultiple(divisor, bound) {
+    let N = Math.floor(bound / divisor) * divisor;
+    console.log(N)
+}
+maxMultiple(9, 100)
 console.log('')
