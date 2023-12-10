@@ -75,6 +75,26 @@ reviewQuestion10.textContent = '10.'
 reviewAnswer10.textContent = ' - '
 
 
+codewarsQuestion1.textContent = '1.'
+codewarsAnswer1.textContent = ' - '
+codewarsQuestion2.textContent = '2.'
+codewarsAnswer2.textContent = ' - '
+codewarsQuestion3.textContent = '3.'
+codewarsAnswer3.textContent = ' - '
+codewarsQuestion4.textContent = '4.'
+codewarsAnswer4.textContent = ' - '
+codewarsQuestion5.textContent = '5.'
+codewarsAnswer5.textContent = ' - '
+codewarsQuestion6.textContent = '6.'
+codewarsAnswer6.textContent = ' - '
+codewarsQuestion7.textContent = '7.'
+codewarsAnswer7.textContent = ' - '
+codewarsQuestion8.textContent = '8.'
+codewarsAnswer8.textContent = ' - '
+codewarsQuestion9.textContent = '9.'
+codewarsAnswer9.textContent = ' - '
+codewarsQuestion10.textContent = '10.'
+codewarsAnswer10.textContent = ' - '
 
 
 
