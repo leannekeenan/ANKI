@@ -24,6 +24,107 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 
+reviewQuestion1.textContent = '1.'
+
+//1.
+console.log('1. ')
+console.log('')
+
+reviewAnswer1.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion2.textContent = '2.'
+//2.
+console.log('2. ')
+console.log('')
+
+reviewAnswer2.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion3.textContent = '3.'
+
+//3.
+console.log('3. ')
+console.log('')
+
+reviewAnswer3.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion4.textContent = '4.'
+//4.
+console.log('4. ')
+console.log('')
+
+reviewAnswer4.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion5.textContent = '5.'
+//5.
+console.log('5. ')
+console.log('')
+
+
+reviewAnswer5.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion6.textContent = '6.'
+//6.
+console.log('6. ')
+console.log('')
+
+reviewAnswer6.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion7.textContent = '7.'
+//7.
+console.log('7. ')
+console.log('')
+
+reviewAnswer7.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion8.textContent = '8.'
+//8.
+console.log('8. ')
+console.log('')
+
+reviewAnswer8.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion9.textContent = '9.'
+//9.
+console.log('9. ')
+console.log('')
+
+reviewAnswer9.textContent = ' - '
+console.log('')
+
+
+
+reviewQuestion10.textContent = '10.'
+//10.
+console.log('10. ')
+console.log('')
+
+reviewAnswer10.textContent = ' - '
+console.log('')
+
 
 let codewarsQuestion1 = document.getElementById('cwq1')
 let codewarsQuestion2 = document.getElementById('cwq2')
@@ -47,44 +148,61 @@ let codewarsAnswer8 = document.getElementById('cwa8')
 let codewarsAnswer9 = document.getElementById('cwa9')
 let codewarsAnswer10 = document.getElementById('cwa10')
 
-
-
-
-
-
-
-reviewQuestion1.textContent = '1.'
-reviewAnswer1.textContent = ' - '
-reviewQuestion2.textContent = '2.'
-reviewAnswer2.textContent = ' - '
-reviewQuestion3.textContent = '3.'
-reviewAnswer3.textContent = ' - '
-reviewQuestion4.textContent = '4.'
-reviewAnswer4.textContent = ' - '
-reviewQuestion5.textContent = '5.'
-reviewAnswer5.textContent = ' - '
-reviewQuestion6.textContent = '6.'
-reviewAnswer6.textContent = ' - '
-reviewQuestion7.textContent = '7.'
-reviewAnswer7.textContent = ' - '
-reviewQuestion8.textContent = '8.'
-reviewAnswer8.textContent = ' - '
-reviewQuestion9.textContent = '9.'
-reviewAnswer9.textContent = ' - '
-reviewQuestion10.textContent = '10.'
-reviewAnswer10.textContent = ' - '
-
+/*Codewars Challenges*/
+console.log('Codewars Challenges')
 
 codewarsQuestion1.textContent = '1.'
+//1.
+console.log('1. ')
+console.log('')
+
 codewarsAnswer1.textContent = ' - '
+console.log('')
+
+
+
 codewarsQuestion2.textContent = '2.'
+//2.
+console.log('2. ')
+console.log('')
+
 codewarsAnswer2.textContent = ' - '
+console.log('')
+
+
+
 codewarsQuestion3.textContent = '3.'
+//3.
+console.log('3. ')
+console.log('')
+
 codewarsAnswer3.textContent = ' - '
+console.log('')
+
+
+
 codewarsQuestion4.textContent = '4.'
+
+//4.
+console.log('4. ')
+console.log('')
+
 codewarsAnswer4.textContent = ' - '
+console.log('')
+
+
+
+
 codewarsQuestion5.textContent = '5.'
+//5.
+console.log('5. ')
+console.log('')
+
 codewarsAnswer5.textContent = ' - '
+console.log('')
+
+
+
 codewarsQuestion6.textContent = '6.'
 codewarsAnswer6.textContent = ' - '
 codewarsQuestion7.textContent = '7.'
@@ -105,82 +223,3 @@ codewarsAnswer10.textContent = ' - '
 
 
 
-
-//1.
-console.log('1. ')
-console.log('')
-console.log('')
-
-//2.
-console.log('2. ')
-console.log('')
-console.log('')
-
-//3.
-console.log('3. ')
-console.log('')
-console.log('')
-
-//4.
-console.log('4. ')
-console.log('')
-console.log('')
-
-//5.
-console.log('5. ')
-console.log('')
-console.log('')
-
-//6.
-console.log('6. ')
-console.log('')
-console.log('')
-
-//7.
-console.log('7. ')
-console.log('')
-console.log('')
-
-//8.
-console.log('8. ')
-console.log('')
-console.log('')
-
-//9.
-console.log('9. ')
-console.log('')
-console.log('')
-
-//10.
-console.log('10. ')
-console.log('')
-console.log('')
-
-
-
-/*Codewars Challenges*/
-console.log('Codewars Challenges')
-//1.
-console.log('1. ')
-console.log('')
-console.log('')
-
-//2.
-console.log('2. ')
-console.log('')
-console.log('')
-
-//3.
-console.log('3. ')
-console.log('')
-console.log('')
-
-//4.
-console.log('4. ')
-console.log('')
-console.log('')
-
-//5.
-console.log('5. ')
-console.log('')
-console.log('')
