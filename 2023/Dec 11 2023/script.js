@@ -240,7 +240,7 @@ let ATM = (withdrawl) => {
 ATM(101)
 console.log('')
 
-codewarsAnswer5.textContent = ' - '
+codewarsAnswer5.textContent = ATM
 console.log('')
 
 
