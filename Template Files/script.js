@@ -24,9 +24,10 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 
-reviewQuestion1.textContent = '1.'
+
 
 //1.
+reviewQuestion1.textContent = '1.'
 console.log('1. ')
 console.log('')
 
@@ -35,8 +36,9 @@ console.log('')
 
 
 
-reviewQuestion2.textContent = '2.'
+
 //2.
+reviewQuestion2.textContent = '2.'
 console.log('2. ')
 console.log('')
 
@@ -45,9 +47,10 @@ console.log('')
 
 
 
-reviewQuestion3.textContent = '3.'
+
 
 //3.
+reviewQuestion3.textContent = '3.'
 console.log('3. ')
 console.log('')
 
@@ -56,8 +59,9 @@ console.log('')
 
 
 
-reviewQuestion4.textContent = '4.'
+
 //4.
+reviewQuestion4.textContent = '4.'
 console.log('4. ')
 console.log('')
 
@@ -66,8 +70,9 @@ console.log('')
 
 
 
-reviewQuestion5.textContent = '5.'
+
 //5.
+reviewQuestion5.textContent = '5.'
 console.log('5. ')
 console.log('')
 
@@ -77,8 +82,9 @@ console.log('')
 
 
 
-reviewQuestion6.textContent = '6.'
+
 //6.
+reviewQuestion6.textContent = '6.'
 console.log('6. ')
 console.log('')
 
@@ -87,8 +93,9 @@ console.log('')
 
 
 
-reviewQuestion7.textContent = '7.'
+
 //7.
+reviewQuestion7.textContent = '7.'
 console.log('7. ')
 console.log('')
 
@@ -97,8 +104,9 @@ console.log('')
 
 
 
-reviewQuestion8.textContent = '8.'
+
 //8.
+reviewQuestion8.textContent = '8.'
 console.log('8. ')
 console.log('')
 
@@ -107,8 +115,9 @@ console.log('')
 
 
 
-reviewQuestion9.textContent = '9.'
+
 //9.
+reviewQuestion9.textContent = '9.'
 console.log('9. ')
 console.log('')
 
@@ -117,8 +126,9 @@ console.log('')
 
 
 
-reviewQuestion10.textContent = '10.'
+
 //10.
+reviewQuestion10.textContent = '10.'
 console.log('10. ')
 console.log('')
 
@@ -151,8 +161,9 @@ let codewarsAnswer10 = document.getElementById('cwa10')
 /*Codewars Challenges*/
 console.log('Codewars Challenges')
 
-codewarsQuestion1.textContent = '1.'
+
 //1.
+codewarsQuestion1.textContent = '1.'
 console.log('1. ')
 console.log('')
 
@@ -161,8 +172,9 @@ console.log('')
 
 
 
-codewarsQuestion2.textContent = '2.'
+
 //2.
+codewarsQuestion2.textContent = '2.'
 console.log('2. ')
 console.log('')
 
@@ -171,8 +183,9 @@ console.log('')
 
 
 
-codewarsQuestion3.textContent = '3.'
+
 //3.
+codewarsQuestion3.textContent = '3.'
 console.log('3. ')
 console.log('')
 
@@ -181,9 +194,10 @@ console.log('')
 
 
 
-codewarsQuestion4.textContent = '4.'
+
 
 //4.
+codewarsQuestion4.textContent = '4.'
 console.log('4. ')
 console.log('')
 
@@ -193,8 +207,9 @@ console.log('')
 
 
 
-codewarsQuestion5.textContent = '5.'
+
 //5.
+codewarsQuestion5.textContent = '5.'
 console.log('5. ')
 console.log('')
 
