@@ -253,7 +253,7 @@ let trimString = (string, length) => {
    }
 }
 trimString('I wonder if this is going to work.', 9)
-codewarsAnswer3.textContent = ' - '
+codewarsAnswer3.textContent = trimString
 console.log('')
 
 
@@ -272,7 +272,7 @@ let countCharacters = (string) => {
 }
 countCharacters('hello')
 
-codewarsAnswer4.textContent = ' - '
+codewarsAnswer4.textContent = countCharacters
 console.log('')
 
 
@@ -293,21 +293,21 @@ let palendrome = (string) => {
 palendrome('racecar')
 palendrome('Racecar')
 
-codewarsAnswer5.textContent = ' - '
+codewarsAnswer5.textContent = palendrome
 console.log('')
 
 
 
-codewarsQuestion6.textContent = '6.'
-codewarsAnswer6.textContent = ' - '
-codewarsQuestion7.textContent = '7.'
-codewarsAnswer7.textContent = ' - '
-codewarsQuestion8.textContent = '8.'
-codewarsAnswer8.textContent = ' - '
-codewarsQuestion9.textContent = '9.'
-codewarsAnswer9.textContent = ' - '
-codewarsQuestion10.textContent = '10.'
-codewarsAnswer10.textContent = ' - '
+//codewarsQuestion6.textContent = '6.'
+//codewarsAnswer6.textContent = ' - '
+//codewarsQuestion7.textContent = '7.'
+//codewarsAnswer7.textContent = ' - '
+//codewarsQuestion8.textContent = '8.'
+//codewarsAnswer8.textContent = ' - '
+//codewarsQuestion9.textContent = '9.'
+//codewarsAnswer9.textContent = ' - '
+//codewarsQuestion10.textContent = '10.'
+//codewarsAnswer10.textContent = ' - '
 
 
 
