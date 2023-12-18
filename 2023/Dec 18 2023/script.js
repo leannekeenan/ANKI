@@ -254,7 +254,7 @@ let indexOfElement = (array, element) => {
 
 indexOfElement([1, 2, 3], 2)
 indexOfElement([1, 2, 3], 4)
-codewarsAnswer3.textContent = ' - '
+codewarsAnswer3.textContent = indexOfElement
 console.log('')
 
 
@@ -271,7 +271,7 @@ let hydrate = (hour) => {
 
 hydrate(3.75)
 
-codewarsAnswer4.textContent = ' - '
+codewarsAnswer4.textContent = hydrate
 console.log('')
 
 
@@ -291,7 +291,7 @@ let countCharacters = (string) => {
 countCharacters('hello')
 console.log('')
 
-codewarsAnswer5.textContent = ' - '
+codewarsAnswer5.textContent = countCharacters
 console.log('')
 
 
