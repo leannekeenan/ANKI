@@ -263,7 +263,7 @@ let removeZeros = (num) => {
 }
 removeZeros(100)
 
-codewarsAnswer5.textContent = ' - '
+codewarsAnswer5.textContent = `let removeZeros = ${removeZeros}`
 console.log('')
 
 
