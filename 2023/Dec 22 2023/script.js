@@ -255,16 +255,16 @@ console.log('')
 
 
 
-codewarsQuestion6.textContent = '6.'
-codewarsAnswer6.textContent = ' - '
-codewarsQuestion7.textContent = '7.'
-codewarsAnswer7.textContent = ' - '
-codewarsQuestion8.textContent = '8.'
-codewarsAnswer8.textContent = ' - '
-codewarsQuestion9.textContent = '9.'
-codewarsAnswer9.textContent = ' - '
-codewarsQuestion10.textContent = '10.'
-codewarsAnswer10.textContent = ' - '
+//codewarsQuestion6.textContent = '6.'
+//codewarsAnswer6.textContent = ' - '
+//codewarsQuestion7.textContent = '7.'
+//codewarsAnswer7.textContent = ' - '
+//codewarsQuestion8.textContent = '8.'
+//codewarsAnswer8.textContent = ' - '
+//codewarsQuestion9.textContent = '9.'
+//codewarsAnswer9.textContent = ' - '
+//codewarsQuestion10.textContent = '10.'
+//codewarsAnswer10.textContent = ' - '
 
 
 
