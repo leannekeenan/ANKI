@@ -230,7 +230,7 @@ let changeCase = (string) => {
 }
 changeCase('HelLo')
 
-codewarsAnswer2.textContent = ' - '
+codewarsAnswer2.textContent = `let changeCase = ${changeCase}`
 console.log('')
 
 
@@ -246,7 +246,7 @@ let filterGeese = (list) => {
     console.log(filtered)
 }
 filterGeese(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher", "Blackbird"])
-codewarsAnswer3.textContent = ' - '
+codewarsAnswer3.textContent = `let filterGeese = ${filterGeese}`
 console.log('')
 
 
@@ -263,7 +263,7 @@ let listFiltering = (list) => {
 }
 listFiltering([1, '2', 3, '4'])
 
-codewarsAnswer4.textContent = ' - '
+codewarsAnswer4.textContent = `let listFiltering = ${listFiltering}`
 console.log('')
 
 
@@ -283,7 +283,7 @@ let summation = (num) => {
 }
 summation(10)
 
-codewarsAnswer5.textContent = ' - '
+codewarsAnswer5.textContent = `let summation = ${summation}`
 console.log('')
 
 
