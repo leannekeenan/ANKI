@@ -55,8 +55,8 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3.'
-console.log('3. ')
+reviewQuestion3.textContent = '3. Document'
+console.log('3. Document')
 console.log('')
 
 reviewAnswer3.textContent = ' - '
