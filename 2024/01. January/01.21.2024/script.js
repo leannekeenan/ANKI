@@ -158,33 +158,54 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1.'
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Pokemon Trainer - Reverse your pokemon list order'
+console.log('1. Pokemon Trainer - Reverse your pokemon list order')
 
-codewarsAnswer1.textContent = ' - '
+let pokemonTrainer = (list) => {
+    console.log(list.reverse())
+}
+pokemonTrainer(['charzard', 'pikachu', 'weedle'])
+
+codewarsAnswer1.textContent = `let pokemonTrainer = ${pokemonTrainer}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2.'
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Discount - create a function that returns a 3 for 2 deal'
+console.log('2. Discount - create a function that returns a 3 for 2 deal')
 
-codewarsAnswer2.textContent = ' - '
+let discount = (quantity, price) => {
+    let discount = Math.floor(quantity / 3) * price
+    let total = (quantity * price) - discount
+    console.log(total)
+
+}
+
+discount(5, 2)
+
+codewarsAnswer2.textContent = `let discount = ${discount}`
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3.'
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Sum of Arrays - write a function that takes an array of numbers and returns a sum of the numbers'
+console.log('3. Sum of Arrays - write a function that takes an array of numbers and returns a sum of the numbers')
 
-codewarsAnswer3.textContent = ' - '
+
+let sumOfNum = (arr) => {
+    let total = 0
+    for(let i = 0; i < arr.length; i++) {
+        total += arr[i]
+    }
+    console.log(total)
+}
+sumOfNum([2, 6, 5, 8, 10])
+
+codewarsAnswer3.textContent = `let sumOfNum = ${sumOfNum}`
 console.log('')
 
 
@@ -192,11 +213,19 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4.'
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Reverse Sequence - -Write a function that returns an array of integers from a provided number to 1'
+console.log('4. Reverse Sequence - -Write a function that returns an array of integers from a provided number to 1')
 
-codewarsAnswer4.textContent = ' - '
+let reverse = (num) => {
+    let total = []
+    for(let i = 1; i <= num; i++) {
+        total.push(i)
+    }
+    console.log(total.reverse())
+}
+reverse(10)
+
+codewarsAnswer4.textContent = `let reverse = ${reverse}`
 console.log('')
 
 
@@ -204,11 +233,21 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5.'
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Does the string contain the character - build a function that checks a string for a character parameter and returns the count total of that character throughout the string'
+console.log('5. Does the string contain the character - build a function that checks a string for a character parameter and returns the count total of that character throughout the string')
 
-codewarsAnswer5.textContent = ' - '
+let containsCharacter = (string, character) => {
+    let count = 0;
+    for(let i = 0; i < string.length; i++) {
+        if(string[i] === character) {
+            count++
+        }
+    }
+    console.log(count)
+}
+
+containsCharacter('hello little lady - lovely lantern', 'l')
+codewarsAnswer5.textContent = `let containsCharacter = ${containsCharacter}`
 console.log('')
 
 
