@@ -209,33 +209,66 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1.'
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Remove first and last character - create a function that removes the first and last characters of a string'
+console.log('1. Remove first and last character - create a function that removes the first and last characters of a string')
 
-codewarsAnswer1.textContent = ' - '
+let removeFirstAndLast =(string) => {
+    let result = string.slice(1, -1)
+    console.log(result)
+}
+removeFirstAndLast('helloo')
+
+codewarsAnswer1.textContent = `let removeFirstAndLast = ${removeFirstAndLast}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2.'
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Did they say hello - write a function that checks if a string contains the word hello in multiple languages'
+console.log('2. Did they say hello - write a function that checks if a string contains the word hello in multiple languages')
 
-codewarsAnswer2.textContent = ' - '
+let didTheySayHello = (string) => {
+    let greetings = {
+        english: 'hello',
+        french: 'bonjour',
+        spanish: 'hola'
+    }
+    for(let greeting in greetings) {
+        if(string.includes(greetings[greeting])) {
+            console.log(true)
+            return
+            
+        }
+        else {
+            console.log(false)
+            return
+            
+        }
+    }
+}
+didTheySayHello('hello')
+
+codewarsAnswer2.textContent =  `let didTheySayHello = ${didTheySayHello}`
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3.'
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. REmove Zeros - write a function that removes the zeros from the end of a number'
+console.log('3. REmove Zeros - write a function that removes the zeros from the end of a number')
 
-codewarsAnswer3.textContent = ' - '
+let removeZeros = (num) => {
+    
+    while(num % 10 === 0 && num !== 0) {
+        num /= 10
+    }
+    return num
+}
+console.log(removeZeros(1000))
+
+codewarsAnswer3.textContent = `let removeZeros = ${removeZeros}`
 console.log('')
 
 
@@ -243,11 +276,17 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4.'
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Discount - write a fucntin that creates a 3 for 2 deal'
+console.log('4. Discount - write a fucntin that creates a 3 for 2 deal')
 
-codewarsAnswer4.textContent = ' - '
+let discount = (quantity, price) => {
+    let deal = Math.floor(quantity / 3) * price;
+    let total = (quantity * price) - deal;
+    console.log(total)
+}
+discount(10, 1)
+
+codewarsAnswer4.textContent = `let discount = ${discount}`
 console.log('')
 
 
@@ -255,9 +294,17 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5.'
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Find Multiples of a Number -  write a function that accepts a value and limit as parameters. Return a list of multiples between the value and the limit'
+console.log('5. Find Multiples of a Number -  write a function that accepts a value and limit as parameters. Return a list of multiples between the value and the limit')
+
+let findMultiples = (multiple, limit) => {
+    let multiples = []
+    for(let i = 1; i * multiple <= limit; i++) {
+        multiples.push(multiple * i)
+    }
+    console.log(multiples)
+}
+findMultiples(2, 10)
 
 codewarsAnswer5.textContent = ' - '
 console.log('')
