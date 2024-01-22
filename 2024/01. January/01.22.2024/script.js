@@ -321,13 +321,3 @@ console.log('')
 // codewarsAnswer9.textContent = ' - '
 // codewarsQuestion10.textContent = '10.'
 // codewarsAnswer10.textContent = ' - '
-
-
-
-
-
-
-
-
-
-
