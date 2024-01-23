@@ -1,5 +1,5 @@
 /*ANKI Review: */
-console.log('ANKI Review:')
+console.log('ANKI Review: JavaScript Array Methods')
 let reviewQuestion1 = document.getElementById('rq1')
 let reviewQuestion2 = document.getElementById('rq2')
 let reviewQuestion3 = document.getElementById('rq3')
@@ -31,7 +31,7 @@ reviewQuestion1.textContent = '1. '
 console.log('1. ')
 console.log('')
 
-reviewAnswer1.textContent = `- `
+reviewAnswer1.textContent = ' - '
 console.log('')
 
 
@@ -42,7 +42,7 @@ reviewQuestion2.textContent = '2. '
 console.log('2. ')
 console.log('')
 
-reviewAnswer2.textContent = `- `
+reviewAnswer2.textContent = ' - '
 console.log('')
 
 
@@ -54,7 +54,7 @@ reviewQuestion3.textContent = '3. '
 console.log('3. ')
 console.log('')
 
-reviewAnswer3.textContent = `- `
+reviewAnswer3.textContent = ' - '
 console.log('')
 
 
@@ -65,7 +65,7 @@ reviewQuestion4.textContent = '4. '
 console.log('4. ')
 console.log('')
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = ' - '
 console.log('')
 
 
@@ -77,7 +77,7 @@ console.log('5. ')
 console.log('')
 
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = ' - '
 console.log('')
 
 
@@ -88,7 +88,7 @@ reviewQuestion6.textContent = '6. '
 console.log('6. ')
 console.log('')
 
-reviewAnswer6.textContent = `- `
+reviewAnswer6.textContent = ' - '
 console.log('')
 
 
@@ -99,7 +99,7 @@ reviewQuestion7.textContent = '7. '
 console.log('7. ')
 console.log('')
 
-reviewAnswer7.textContent = `- `
+reviewAnswer7.textContent = ' - '
 console.log('')
 
 
@@ -110,7 +110,7 @@ reviewQuestion8.textContent = '8. '
 console.log('8. ')
 console.log('')
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = ' - '
 console.log('')
 
 
@@ -121,7 +121,7 @@ reviewQuestion9.textContent = '9. '
 console.log('9. ')
 console.log('')
 
-reviewAnswer9.textContent = `- `
+reviewAnswer9.textContent = ' - '
 console.log('')
 
 
@@ -132,7 +132,7 @@ reviewQuestion10.textContent = '10. '
 console.log('10. ')
 console.log('')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = ' - '
 console.log('')
 
 
@@ -167,7 +167,7 @@ codewarsQuestion1.textContent = '1. '
 console.log('1. ')
 console.log('')
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = ' - '
 console.log('')
 
 
@@ -178,7 +178,7 @@ codewarsQuestion2.textContent = '2. '
 console.log('2. ')
 console.log('')
 
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = ' - '
 console.log('')
 
 
@@ -189,7 +189,7 @@ codewarsQuestion3.textContent = '3. '
 console.log('3. ')
 console.log('')
 
-codewarsAnswer3.textContent = `- `
+codewarsAnswer3.textContent = ' - '
 console.log('')
 
 
@@ -201,7 +201,7 @@ codewarsQuestion4.textContent = '4. '
 console.log('4. ')
 console.log('')
 
-codewarsAnswer4.textContent = `- `
+codewarsAnswer4.textContent = ' - '
 console.log('')
 
 
@@ -213,21 +213,21 @@ codewarsQuestion5.textContent = '5. '
 console.log('5. ')
 console.log('')
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = ' - '
 console.log('')
 
 
 
 // codewarsQuestion6.textContent = '6.'
-// codewarsAnswer6.textContent = `- `
+// codewarsAnswer6.textContent = ' - '
 // codewarsQuestion7.textContent = '7.'
-// codewarsAnswer7.textContent = `- `
+// codewarsAnswer7.textContent = ' - '
 // codewarsQuestion8.textContent = '8.'
-// codewarsAnswer8.textContent = `- `
+// codewarsAnswer8.textContent = ' - '
 // codewarsQuestion9.textContent = '9.'
-// codewarsAnswer9.textContent = `- `
+// codewarsAnswer9.textContent = ' - '
 // codewarsQuestion10.textContent = '10.'
-// codewarsAnswer10.textContent = `- `
+// codewarsAnswer10.textContent = ' - '
 
 
 
