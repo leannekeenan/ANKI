@@ -199,21 +199,68 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. multilingual hello - write a functioned named welcome that accepts a parameter "language" and returns a greeting.'
+console.log('1. multilingual hello - write a functioned named welcome that accepts a parameter "language" and returns a greeting.')
 
-codewarsAnswer1.textContent = `- `
+let welcome = (language) => {
+    let greeting = {
+    english: 'Welcome',
+    czech: 'Vitejte',
+    danish: 'Velkomst',
+    dutch: 'Welkom',
+    estonian: 'Tere tulemast',
+    finnish: 'Tervetuloa',
+    flemish: 'Welgekomen',
+    french: 'Bienvenue',
+    german: 'Willkommen',
+    irish: 'Failte',
+    italian: 'Benvenuto',
+    latvian: 'Gaidits',
+    lithuanian: 'Laukiamas',
+    polish: 'Witamy',
+    spanish: 'Bienvenido',
+    swedish: 'Valkommen',
+    welsh: 'Croeso'
+    }
+    
+    if(greeting.hasOwnProperty(language)) {
+        console.log(greeting[language])
+    }
+    else {
+        console.log('Welcome') //welcome.english
+    }
+}
+welcome('spanish')
+codewarsAnswer1.textContent = `let welcome = ${welcome}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Feast of many beasts - write a function that takes the first and last letter of one arguement and compare them to another.  If they match, retuen true, else retuen false'
+console.log('2. Feast of many beasts - write a function that takes the first and last letter of one arguement and compare them to another.  If they match, retuen true, else retuen false')
 
+let feast = (stringA, stringB) => {
+    for(let i = 0; i < stringA.length; i++) {
+        let firstLetter = stringA[0];
+        let lastLetter = stringA[stringA.length - 1]
+        console.log(firstLetter, lastLetter)
+    }
+
+    for(let i = 0; i < stringB.length; i++) {
+        let firstLetter = stringB[0];
+        let lastLetter = stringB[stringB.length - 1]
+        console.log(firstLetter, lastLetter)
+    }
+    if(stringA.firstLetter === stringB.firstLetter && stringA.lastLetter === stringB.lastLetter) {
+        console.log(true)
+    }
+    else {
+        console.log(false)
+    }
+}
+feast('great blue heron', 'garlic naan')
 codewarsAnswer2.textContent = `- `
 console.log('')
 
@@ -221,10 +268,16 @@ console.log('')
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Discount - write a function that give a 3 for 2 discount'
+console.log('3. Discount - write a function that give a 3 for 2 discount')
 
+let discount = (quantity, price) => {
+    let discount = Math.floor(quantity / 3) * price;
+    let total = (quantity * price) - discount;
+    console.log(total)
+  
+}
+discount(2, 1)
 codewarsAnswer3.textContent = `- `
 console.log('')
 
@@ -233,10 +286,20 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Points per Game - write a constructor called NBA that accepts playerName, playerTeam, and pointsPerGame.  Write a function called sumPPG that accepts two NBA objects and retuens the points total sum'
+console.log('4. Points per Game - write a constructor called NBA that accepts playerName, playerTeam, and pointsPerGame.  Write a function called sumPPG that accepts two NBA objects and retuens the points total sum')
+function NBA (name, team, points) {
+    this.name = name;
+    this.team = team;
+    this.points = points
+}
 
+let sumPPG = (p1, p2) => {
+    console.log(p1.points + p2.points)
+}
+let x = new NBA('name', 'team', 100);
+let y = new NBA('NAME', 'TEAM', 300)
+sumPPG(x, y)
 codewarsAnswer4.textContent = `- `
 console.log('')
 
@@ -245,9 +308,16 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Remove zeros. Write a function that removes the zeros from the end of a number'
+console.log('5. Remove zeros. Write a function that removes the zeros from the end of a number')
+
+let removeZeros = (num) => {
+    while(num % 10 === 0 && num !== 0) {
+        num /= 10
+    }
+    console.log(num)
+}
+removeZeros(5000)
 
 codewarsAnswer5.textContent = `- `
 console.log('')
