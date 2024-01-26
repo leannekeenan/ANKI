@@ -261,7 +261,7 @@ let feast = (stringA, stringB) => {
     }
 }
 feast('great blue heron', 'garlic naan')
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `let feast = ${feast}`
 console.log('')
 
 
@@ -278,7 +278,7 @@ let discount = (quantity, price) => {
   
 }
 discount(2, 1)
-codewarsAnswer3.textContent = `- `
+codewarsAnswer3.textContent = `let dicaount = ${discount}`
 console.log('')
 
 
@@ -288,19 +288,23 @@ console.log('')
 //4.
 codewarsQuestion4.textContent = '4. Points per Game - write a constructor called NBA that accepts playerName, playerTeam, and pointsPerGame.  Write a function called sumPPG that accepts two NBA objects and retuens the points total sum'
 console.log('4. Points per Game - write a constructor called NBA that accepts playerName, playerTeam, and pointsPerGame.  Write a function called sumPPG that accepts two NBA objects and retuens the points total sum')
-function NBA (name, team, points) {
-    this.name = name;
-    this.team = team;
-    this.points = points
-}
+let pointsPerGame = () => {
+    function NBA (name, team, points) {
+        this.name = name;
+        this.team = team;
+        this.points = points
+    }
+    
+    let sumPPG = (p1, p2) => {
+        console.log(p1.points + p2.points)
+    }
+    let x = new NBA('name', 'team', 100);
+    let y = new NBA('NAME', 'TEAM', 300)
+    sumPPG(x, y)
 
-let sumPPG = (p1, p2) => {
-    console.log(p1.points + p2.points)
 }
-let x = new NBA('name', 'team', 100);
-let y = new NBA('NAME', 'TEAM', 300)
-sumPPG(x, y)
-codewarsAnswer4.textContent = `- `
+pointsPerGame()
+codewarsAnswer4.textContent = `let pointsPerGame = ${pointsPerGame}`
 console.log('')
 
 
@@ -319,7 +323,7 @@ let removeZeros = (num) => {
 }
 removeZeros(5000)
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = `let removeZeros = ${removeZeros}`
 console.log('')
 
 
