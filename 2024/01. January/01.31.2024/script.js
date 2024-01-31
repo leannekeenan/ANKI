@@ -194,29 +194,44 @@ let multilingualHello = (language) => {
 }
 multilingualHello('')
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `let multilingualHello = ${multilingualHello}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. ATM - write a function that determines the minimum number of bank note needed to honor a withdrawl.  The withdrawl must be greater than 1 dollar and less than $1500.'
+console.log('2. ATM - write a function that determines the minimum number of bank note needed to honor a withdrawl.  The withdrawl must be greater than 1 dollar and less than $1500.')
 
-codewarsAnswer2.textContent = `- `
+let ATM = (withdrawl) => {
+    let bills = [100, 50, 20, 10, 5, 1];
+    let total = 0
+    for(let i = 0; i < bills.length; i++) {
+        total += Math.floor(withdrawl / bills[i]);
+        withdrawl %= bills[i]
+    }
+    console.log(total)
+}
+ATM(101)
+
+codewarsAnswer2.textContent = `let ATM = ${ATM}`
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. ROT 13 - create a function that creates a cipher from a provided string.  Shift the letters by 13 characters'
+console.log('3. ROT 13 - create a function that creates a cipher from a provided string.  Shift the letters by 13 characters')
 
-codewarsAnswer3.textContent = `- `
+let cipherFunction = (string) => {
+    let alpha = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    console.log(string.replace(/[a-zA-Z]/ig, c => alpha[alpha.indexOf(c) + 13]));
+}
+cipherFunction('hello')
+
+codewarsAnswer3.textContent = `let cipherFunction = ${cipherFunction}`
 console.log('')
 
 
@@ -224,11 +239,21 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. You\'re A Square - given a number, determine if it a square'
+console.log('4. You\'re A Square - given a number, determine if it a square')
 
-codewarsAnswer4.textContent = `- `
+let square = (num) => {
+    if(num % Math.sqrt(num) === 0) {
+        console.log('square')
+    }
+    else {
+        console.log('not square')
+    }
+
+}
+square(25)
+
+codewarsAnswer4.textContent = `let square = ${square}`
 console.log('')
 
 
@@ -236,9 +261,14 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Remove Duplicates from List - write a function that removes duplicates from an array and keeps the sequence the same'
+console.log('5. Remove Duplicates from List - write a function that removes duplicates from an array and keeps the sequence the same')
+
+let removeDuplicates = (list) => {
+    let newList = new Set([...list]);
+    console.log(newList)
+}
+removeDuplicates([1, 2, 2, 2, 2, 2, 1, 3, 1, 4, 1, 5])
 
 codewarsAnswer5.textContent = `- `
 console.log('')
