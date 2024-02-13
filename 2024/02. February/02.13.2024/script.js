@@ -208,16 +208,21 @@ let hydrated = (time) => {
 }
 hydrated(4)
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `let hydrated = ${hydrated}`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. Remove Duplicates from List - write a function that returns an array with duplicate values removes'
+console.log('9. Remove Duplicates from List - write a function that returns an array with duplicate values removes')
+
+let removeDuplicates = (list) => {
+    let newList = new Set([...list])
+    console.log(newList)
+}
+removeDuplicates([1, 2, 1, 3, 1, 4, 5])
 
 reviewAnswer9.textContent = `- `
 console.log('')
