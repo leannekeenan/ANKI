@@ -224,16 +224,25 @@ let removeDuplicates = (list) => {
 }
 removeDuplicates([1, 2, 1, 3, 1, 4, 5])
 
-reviewAnswer9.textContent = `- `
+reviewAnswer9.textContent = `let removeDuplicates = ${removeDuplicates}`
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. Abbreviate a Two Word Name - write a function that converts a full name into initials'
+console.log('10. Abbreviate a Two Word Name - write a function that converts a full name into initials')
+
+let abbreviate = (string) => {
+   let initials = '';
+   let names = string.split(' ');
+   for(let i = 0; i < names.length; i++) {
+    initials += names [i][0] + '.'
+   }
+   console.log(initials)
+}
+abbreviate('Leanne Michelle Keenan')
 
 reviewAnswer10.textContent = `- `
 console.log('')
