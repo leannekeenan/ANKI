@@ -194,9 +194,19 @@ console.log('')
 
 
 //8.
-reviewQuestion8.textContent = '8. Keep Hydrated'
-console.log('8. Keep Hydrated')
-console.log('')
+reviewQuestion8.textContent = '8. Keep Hydrated - write a function where if given a time in terms of hours, return how much water should be consumed rounded to the smallest value.  Keep in mind hydration requires 0.5 liters per hour'
+console.log('8. Keep Hydrated - write a function where if given a time in terms of hours, return how much water should be consumed rounded to the smallest value.  Keep in mind hydration requires 0.5 liters per hour')
+
+let hydrated = (time) => {
+    let hydeationLevels = Math.floor(time * 0.5)
+   if(hydeationLevels <= 1) {
+    console.log(1)
+   }
+   else {
+    console.log(hydeationLevels)
+   }
+}
+hydrated(4)
 
 reviewAnswer8.textContent = `- `
 console.log('')
