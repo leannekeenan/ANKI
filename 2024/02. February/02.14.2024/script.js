@@ -69,13 +69,12 @@ console.log('3. .keys()')
 console.log('Array method used to return the index value of array elements')
 
 
-    let arr = ['h', 'i'];
-    let iterator = arr.keys();
-    for(let key in iterator) {
-        console.log(key)
-       
-    }
-  
+let keysArray = [1, 2, 3];
+let key = keysArray.keys()
+
+for(let key in keysArray) {
+    console.log(key)
+}
 
 
 
@@ -91,23 +90,35 @@ console.log('')
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. .every()'
+console.log('4. .every()')
+console.log('Used to return the element value of each array element through a for loop')
 
-reviewAnswer4.textContent = `- `
+let everyFunction = () => {
+    let arr = [1, 2, 3];
+    let condition = value => value > 5;
+    console.log(arr.every(condition))
+}
+everyFunction()
+
+reviewAnswer4.textContent = `- Used to return the element value of each array element through a for loop`
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. flatMap'
+console.log('5. flatMap')
+console.log('Array method used to flatten the result of a new array into the orignal array in order of the index')
 
-
-reviewAnswer5.textContent = `- `
+let flatMapMethod = () => {
+    let arr = [1, 2, 3];
+    let newArr = arr.flatMap((n) => n * 10)
+    console.log(newArr)
+}
+flatMapMethod()
+reviewAnswer5.textContent = `- Array method used to flatten the result of a new array into the orignal array in order of the index`
 console.log('')
 
 
