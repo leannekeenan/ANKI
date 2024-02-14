@@ -173,11 +173,19 @@ console.log('')
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. .entries()'
+console.log('9. .entries()')
+console.log('array method used to return an arrays objects value')
 
-reviewAnswer9.textContent = `- `
+let entriesMethod = () => {
+    let arr = [1, 2, 3];
+    for(let entries of arr) {
+        console.log(entries)
+    }
+}
+entriesMethod()
+
+reviewAnswer9.textContent = `- array method used to return an arrays objects value`
 console.log('')
 
 
