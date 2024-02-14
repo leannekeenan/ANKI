@@ -125,21 +125,29 @@ console.log('')
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
-
-reviewAnswer6.textContent = `- `
+reviewQuestion6.textContent = '6. .of()'
+console.log('6. .of()')
+console.log('Creates an array from passed value reuardless of type')
+let ofMethod = () => {
+   return  Array.of('hello', true, 10)
+}
+console.log(ofMethod())
+reviewAnswer6.textContent = `- Creates an array from passed value reuardless of type`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
+reviewQuestion7.textContent = '7. .splice'
+console.log('7. .splice')
 console.log('')
-
+let s = () => {
+    let arr = [1, 2, 3];
+    arr.splice(1, 1, 'hello')
+    console.log(arr)
+}
+s()
 reviewAnswer7.textContent = `- `
 console.log('')
 
@@ -147,11 +155,18 @@ console.log('')
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. .find()'
+console.log('8. .find()')
+console.log('array method used to find a value in the array that matches the passed condition')
 
-reviewAnswer8.textContent = `- `
+let findMethod = () => {
+    let arr = [1, 2, 3];
+    let found = arr.find(num => num > 2);
+    console.log(found)
+}
+findMethod()
+
+reviewAnswer8.textContent = `- array method used to find a value in the array that matches the passed condition`
 console.log('')
 
 
