@@ -1,5 +1,5 @@
 /*ANKI Review: */
-console.log('ANKI Review:')
+console.log('ANKI Review: JavaScriot String Methods')
 let reviewQuestion1 = document.getElementById('rq1')
 let reviewQuestion2 = document.getElementById('rq2')
 let reviewQuestion3 = document.getElementById('rq3')
@@ -27,22 +27,45 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 //1.
-reviewQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+reviewQuestion1.textContent = '1. String.prototype[@@iterator]()'
+console.log('1. String.prototype[@@iterator]()')
+console.log('used to create an iterator specifically for iterating over the characters of a string. It allows you to access each character individually, either by using a for...of loop or by manually calling the next() method on the iterators')
 
-reviewAnswer1.textContent = `- `
+let stringPrototype = () => {
+    let hello = "hello";
+    let iterator = hello[Symbol.iterator]();
+
+    for(let i of iterator) {
+        console.log(i)
+    }
+
+}
+reviewAnswer1.textContent = `- used to create an iterator specifically for iterating over the characters of a string. It allows you to access each character individually, either by using a for...of loop or by manually calling the next() method on the iterator. let stringPrototype = ${stringPrototype}`
 console.log('')
 
 
 
 
 //2.
-reviewQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+reviewQuestion2.textContent = '2. .match()'
+console.log('2. .match()')
+console.log('String method used to see if a string contains a specified character and returns its index position, content, and group')
 
-reviewAnswer2.textContent = `- `
+let matchMethod = () => {
+
+    //to find a singular element
+    let string = 'string';
+    let match = string.match("t");
+    console.log(match)
+
+    //tp find elements that have a realtive similarities
+    let newstring = 'Hello There';
+    let regex = /[A-Z]/g;
+    let found = newstring.match(regex)
+    console.log(found)
+}
+matchMethod()
+reviewAnswer2.textContent = `- String method used to see if a string contains a specified character and returns its index position, content, and group. let matchMethod =  ${matchMethod}`
 console.log('')
 
 
@@ -50,89 +73,156 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+reviewQuestion3.textContent = '3. .matchAll()'
+console.log('3. .matchAll()')
+console.log('String method used to check if a strings elements match a set condition')
 
-reviewAnswer3.textContent = `- `
+let matchAllMethod = () => {
+    let string = 'string';
+    let iterator = /[A-Z]/ig;
+    let matchAll = [...string.matchAll(iterator)]
+    console.log(matchAll[0])
+    console.log(matchAll[1])
+    console.log(matchAll[2])
+    console.log(matchAll[3])
+    console.log(matchAll[4])
+    console.log(matchAll[5])
+}
+
+matchAllMethod()
+
+reviewAnswer3.textContent = `- String method used to check if a strings elements match a set condition`
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. .padStart()'
+console.log('4. .padStart()')
+console.log('Adds padding to the start of a string. Ensure the value passed accounts fort the length of the string and the number of spaces for padding you would like to start the string')
 
-reviewAnswer4.textContent = `- `
+let padStart = () => {
+    let string = 'string';
+    let padding = string.padStart(9, '.')
+    console.log(padding)
+}
+padStart()
+
+reviewAnswer4.textContent = `- Adds padding to the start of a string. Ensure the value passed accounts fort the length of the string and the number of spaces for padding you would like to start the string`
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. .from CharCode()'
+console.log('5. .from CharCode()')
+console.log('returns a numerical value from the UTF-16 list for the character passed')
 
+let charCodeMethod = () => {
+    let string = 'string';
+    let charCode = string.charCodeAt(0)
+    console.log(charCode)
+}
+charCodeMethod()
 
-reviewAnswer5.textContent = `- `
+let fromCharCode = () => {
+    let h = 104;
+    let e = 101;
+    let l = 108;
+    let o = 111;
+
+    let fromCharCodeString = String.fromCharCode(h, e, l, l, o);
+    console.log(fromCharCodeString)
+}
+fromCharCode()
+reviewAnswer5.textContent = `- returns a numerical value from the UTF-16 list for the character passed`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
-
-reviewAnswer6.textContent = `- `
+reviewQuestion6.textContent = '6. .search()'
+console.log('6. .search()')
+console.log('String method used to find the index of an existing character in a string returning the index value')
+let searchMethod = () => {
+    let string = 'hello';
+    let search = string.search('e');
+    console.log(search)
+}
+searchMethod()
+reviewAnswer6.textContent = `- String method used to find the index of an existing character in a string returning the index value`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. .raw()'
+console.log('7. .raw()')
+console.log('used to return the raw value of template literals')
 
-reviewAnswer7.textContent = `- `
+let rawMethod = () => {
+    let string = 'string raw method';
+    let raw = String.raw`${string}`;
+    console.log(raw)
+}
+rawMethod()
+
+reviewAnswer7.textContent = `- used to return the raw value of template literals`
 console.log('')
 
 
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. .toLowerCase()'
+console.log('8. .toLowerCase()')
+console.log('Translates the characters of a string to their upper case counterpart')
 
-reviewAnswer8.textContent = `- `
+let toUpperCase = () => {
+    let string = 'string';
+    let upper = string.toUpperCase();
+    console.log(upper)
+}
+toUpperCase()
+
+reviewAnswer8.textContent = `- Translates the characters of a string to their upper case counterpart`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. .fromCodePoint()'
+console.log('9. .fromCodePoint()')
+console.log('A Static string method used to create a string from a sequence of Unicode code points')
 
-reviewAnswer9.textContent = `- `
+let fromCodePoint = () => { 
+    let h = 104;
+    let e = 101;
+    let l = 108;
+    let o = 111;
+    let newString = String.fromCodePoint(104, 101, 108, 108, 111);
+    console.log(newString)
+}
+fromCodePoint()
+reviewAnswer9.textContent = `- A Static string method used to create a string from a sequence of Unicode code points`
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
-
-reviewAnswer10.textContent = `- `
+reviewQuestion10.textContent = '10. .split()'
+console.log('10. .split()')
+console.log('String method used to return a word within a string based on its index position')
+let string = 'string is written here';
+let word = string.split(' ')
+console.log(word[2])
+reviewAnswer10.textContent = `- String method used to return a word within a string based on its index position`
 console.log('')
 
 
