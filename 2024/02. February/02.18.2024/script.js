@@ -42,7 +42,9 @@ console.log('')
 reviewQuestion2.textContent = '2. element.style.property = "value"'
 console.log('2. element.style.property = "value"')
 console.log('JS DOM method that allows developers to alter a DOM elements CSS properties relating to its styling.  It is a best practice to keep styling and functionality seperate, but this can be used when styling is a functionality of a DOM element.')
-
+let body = document.querySelector('body');
+body.style.background = "black"
+body.style.color = "white"
 reviewAnswer2.textContent = `- JS DOM method that allows developers to alter a DOM elements CSS properties relating to its styling.  It is a best practice to keep styling and functionality seperate, but this can be used when styling is a functionality of a DOM element.`
 console.log('')
 
@@ -51,22 +53,25 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+reviewQuestion3.textContent = '3. element.style.property = "value"'
+console.log('3. element.style.property = "value"')
+console.log(' DOM method that allows developers to alter a DOM elements CSS properties relating to its styling.  It is a best practice to keep styling and functionality seperate, but this can be used when styling is a functionality of a DOM element.')
 
-reviewAnswer3.textContent = `- `
+reviewAnswer3.textContent = `-  DOM method that allows developers to alter a DOM elements CSS properties relating to its styling.  It is a best practice to keep styling and functionality seperate, but this can be used when styling is a functionality of a DOM element.`
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. document.createElement("tagName")'
+console.log('4. document.createElement("tagName")')
+console.log('JS DOM element used to add a new element to the DOM without directly adding it through HTML.  While seperating content and functionality is a recommmended practice, this is a functionlity to be used when providing information is a functionality of the DOM element')
+let p = document.createElement('p')
+p.textContent = 'hello, this is element has been added using the ".createElement" method and added to the DOM using the .appendChild method'
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = `- JS DOM element used to add a new element to the DOM without directly adding it through HTML.  While seperating content and functionality is a recommmended practice, this is a functionlity to be used when providing information is a functionality of the DOM element. `
+reviewAnswer4.appendChild(p)
 console.log('')
 
 
