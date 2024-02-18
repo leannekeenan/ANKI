@@ -27,22 +27,23 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 //1.
-reviewQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
-
-reviewAnswer1.textContent = `- `
+reviewQuestion1.textContent = '1. element.setAttribute("attributeName", "value")'
+console.log('1. element.setAttribute("attributeName", "value")')
+console.log('DOM method used to add an attribute to an element in JavaScript. Used to change the value of an exissting attribute or adds a new attribute to an existing element')
+let space = document.querySelector('.space')
+space.setAttribute('style', 'background-color: purple')
+reviewAnswer1.textContent = `- DOM method used to add an attribute to an element in JavaScript. Used to change the value of an exissting attribute or adds a new attribute to an existing element`
 console.log('')
 
 
 
 
 //2.
-reviewQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+reviewQuestion2.textContent = '2. element.style.property = "value"'
+console.log('2. element.style.property = "value"')
+console.log('JS DOM method that allows developers to alter a DOM elements CSS properties relating to its styling.  It is a best practice to keep styling and functionality seperate, but this can be used when styling is a functionality of a DOM element.')
 
-reviewAnswer2.textContent = `- `
+reviewAnswer2.textContent = `- JS DOM method that allows developers to alter a DOM elements CSS properties relating to its styling.  It is a best practice to keep styling and functionality seperate, but this can be used when styling is a functionality of a DOM element.`
 console.log('')
 
 
