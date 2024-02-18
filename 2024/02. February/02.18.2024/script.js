@@ -78,34 +78,51 @@ console.log('')
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. element.childNodes'
+console.log('5. element.childNodes')
+console.log('DOM method used to target the child nodes of a specified object')
 
+const review = document.querySelector('.title');
 
-reviewAnswer5.textContent = `- `
+// Iterate over each child node of the title element
+review.childNodes.forEach(node => {
+
+    console.log(node)
+
+        
+    
+});
+
+reviewAnswer5.textContent = `- DOM method used to target the child nodes of a specified object`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
+reviewQuestion6.textContent = '6. parentElement.insertBefore(newElement, referenceElement)'
+console.log('6. parentElement.insertBefore(newElement, referenceElement)')
+console.log('DOM method used to insert new element before existing ones created in HTML.  The existing parent element may contain other ereference elements to insert the element before,')
 
-reviewAnswer6.textContent = `- `
+let newElement = document.createElement('p');
+newElement.textContent = 'parentElement.insertBefore Example';
+let reviewObj = document.querySelector('.review')
+let reference = document.getElementById('rq7')
+reviewObj.insertBefore(newElement, reference)
+
+reviewAnswer6.textContent = `- DOM method used to insert new element before existing ones created in HTML.  The existing parent element may contain other ereference elements to insert the element before,`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. element.innerHTML'
+console.log('7. element.innerHTML')
+console.log('DOM method that changes teh content of HTML objects')
 
-reviewAnswer7.textContent = `- `
+reviewAnswer7.textContent = `- DOM method that changes teh content of HTML objects`
+reviewQuestion7.innerHTML = reviewQuestion7.textContent
 console.log('')
 
 
