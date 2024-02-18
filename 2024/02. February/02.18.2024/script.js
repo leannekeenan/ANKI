@@ -161,11 +161,14 @@ console.log('')
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. document.createTextNode("text content")'
+console.log('10. document.createTextNode("text content")')
+console.log('Adds a new node element containing text in the document, which is used as a parent element.')
 
-reviewAnswer10.textContent = `- `
+let textNode = document.createTextNode('     ---> hello')
+reviewQuestion10.appendChild(textNode)
+
+reviewAnswer10.textContent = `- Adds a new node element containing text in the document, which is used as a parent element.`
 console.log('')
 
 
