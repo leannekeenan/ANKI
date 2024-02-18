@@ -129,22 +129,32 @@ console.log('')
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
-
-reviewAnswer8.textContent = `- `
+reviewQuestion8.textContent = '8. element.classList.add("className")'
+console.log('8. element.classList.add("className')
+console.log('adds a class to a element')
+reviewAnswer8.classList.add('example')
+reviewAnswer8.textContent = `- adds a class to a element`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. element.previousSibling'
+console.log('9. element.previousSibling')
+console.log('DOM method used to target the previous sibling of a specified element')
 
-reviewAnswer9.textContent = `- `
+let previousSibling = reviewQuestion10.previousSibling;
+
+if(previousSibling) {
+console.log(reviewAnswer9.textContent)
+}
+else {
+console.log('no previous sibling')
+}
+
+
+reviewAnswer9.textContent = `- DOM method used to target the previous sibling of a specified element. `
 console.log('')
 
 
