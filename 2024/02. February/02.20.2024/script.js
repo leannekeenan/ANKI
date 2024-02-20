@@ -308,7 +308,7 @@ let multilingualHello = (languages) => {
     }
 }
 multilingualHello('english')
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `- let multilingualHello = ${multilingualHello}`
 console.log('')
 
 
@@ -328,7 +328,7 @@ let abbreviate = (name) => {
 }
 abbreviate("Leanne Keenan")
 
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `- let abbreviate = ${abbreviate}`
 console.log('')
 
 
@@ -336,9 +336,21 @@ console.log('')
 
 //3.
 codewarsQuestion3.textContent = '3. Keep Hydrated - Write a function where you are given the time in hours and you need to return the number of litres you need to drink, rounded to the smallest value.'
+
 console.log('3. Keep Hydrated - Write a function where you are given the time in hours and you need to return the number of litres you need to drink, rounded to the smallest value.')
-console.log('')
-codewarsAnswer3.textContent = `- `
+
+let hydration = (time) => {
+    let liters = Math.floor(time / 2);
+   
+    if(liters <= 1) {
+        liters = Math.floor(time / 1)
+    }
+
+    console.log(liters)
+}
+hydration(1)
+
+codewarsAnswer3.textContent = `let hydration = ${hydration}`
 console.log('')
 
 
@@ -346,9 +358,21 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Consonant count - write a function that counts the consonants in a string and returns the count'
+console.log('4. Consonant count - write a function that counts the consonants in a string and returns the count')
+
+let consonantCount = (str) => {
+    let vowels = /[aeiou]/ig;
+    let total = 0;
+    for(let i = 0; i < str.length; i++) {
+      if(!vowels.test(str[i])) {
+        total++
+      }
+    }
+    console.log(total)
+}
+consonantCount('hello')
+
 codewarsAnswer4.textContent = `- `
 console.log('')
 
