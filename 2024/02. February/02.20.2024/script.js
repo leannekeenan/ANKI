@@ -335,8 +335,8 @@ console.log('')
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
+codewarsQuestion3.textContent = '3. Keep Hydrated'
+console.log('3. Keep Hydrated')
 console.log('')
 codewarsAnswer3.textContent = `- `
 console.log('')
