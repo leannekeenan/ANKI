@@ -381,9 +381,25 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Feast of Many Beasts'
+console.log('5. Feast of Many Beasts')
+
+let feast = (beast, dish) => {
+   
+            if(beast[0] === dish[0] && 
+                beast[beast.length - 1] === dish[dish.length - 1]) {
+                console.log('allowed')
+                return
+            }
+            else {
+                console.log("not allowed")
+                return
+            }
+}
+feast('Great Heron', "Garlic Naan")
+feast('Black Bear', "Banana Bread")
+feast('Leanne', "Lemonade")
+
 codewarsAnswer5.textContent = `- `
 console.log('')
 
