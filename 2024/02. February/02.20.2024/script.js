@@ -326,7 +326,7 @@ let abbreviate = (name) => {
     }
     console.log(result.join(''))
 }
-abbreviate("Leanne Michelle Keenan")
+abbreviate("Leanne Keenan")
 
 codewarsAnswer2.textContent = `- `
 console.log('')
