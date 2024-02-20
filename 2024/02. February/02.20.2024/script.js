@@ -335,8 +335,8 @@ console.log('')
 
 
 //3.
-codewarsQuestion3.textContent = '3. Keep Hydrated'
-console.log('3. Keep Hydrated')
+codewarsQuestion3.textContent = '3. Keep Hydrated - Write a function where you are given the time in hours and you need to return the number of litres you need to drink, rounded to the smallest value.'
+console.log('3. Keep Hydrated - Write a function where you are given the time in hours and you need to return the number of litres you need to drink, rounded to the smallest value.')
 console.log('')
 codewarsAnswer3.textContent = `- `
 console.log('')
