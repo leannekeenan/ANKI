@@ -27,22 +27,22 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 //1.
-reviewQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+reviewQuestion1.textContent = '1. grep -R'
+console.log('1. grep -R')
+console.log('global regular expression print recursive - searches all files in a directory and outputs filenames and lines containing matched results')
 
-reviewAnswer1.textContent = `- `
+reviewAnswer1.textContent = `- grep -R stands for global regular expression print recursive.  IT searches all files in a directory and outputs the filenames and lines containing matched results`
 console.log('')
 
 
 
 
 //2.
-reviewQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+reviewQuestion2.textContent = '2. cd ~'
+console.log('2. cd ~')
+console.log('change directory to home')
 
-reviewAnswer2.textContent = `- `
+reviewAnswer2.textContent = `- change directory to home`
 console.log('')
 
 
@@ -50,56 +50,56 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+reviewQuestion3.textContent = '3. source'
+console.log('3. source')
+console.log('activates changes in a specified files for the current session without having to close and restart the terminal.  Makes changes available immediately within the current session')
 
-reviewAnswer3.textContent = `- `
+reviewAnswer3.textContent = `- The source command is used to make changes to a specified file in the current session without having to rearart a new session window, allowing the changes to take effect immediately.`
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. "<"'
+console.log('4. "<"')
+console.log('Takes input from the right and puts it into the program on the left.  Example: $ file < doc.txt puts the doc inside the file ')
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = `- Takes input from the right and puts it into the program on the left.  Example: $ file < doc.txt puts the doc inside the file `
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. export'
+console.log('5. export')
+console.log('Interface command used to make a variable available to all child sessions initiated from the current session.  THIS IS HOW YOU GET VARAIBLES TO PERSIST ACROSS PROGRAMS.  Example: export USER="Jane Doe"')
 
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = `- Interface command used to make a variable available to all child sessions initiated from the current session.  THIS IS HOW YOU GET VARAIBLES TO PERSIST ACROSS PROGRAMS.  Example: $USER="Jane Doe"`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
+reviewQuestion6.textContent = '6. rm -r'
+console.log('6. rm -r')
+console.log('remove recursively.  Removes a directory, its sub directories and related files')
 
-reviewAnswer6.textContent = `- `
+reviewAnswer6.textContent = `- remove recursively.  Removes a directory, its sub directories and related files`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. HOME'
+console.log('7. HOME')
+console.log('a variable within an environment variable that displays a path of the home directory')
 
-reviewAnswer7.textContent = `- `
+reviewAnswer7.textContent = `- a variable within an environment variable that displays a path of the home directory`
 console.log('')
 
 
