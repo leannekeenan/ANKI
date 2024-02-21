@@ -163,10 +163,19 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Abbreviate your name - Write a function that returns the abbreviated version of your name with the letters seperated by a "."'
+console.log('1. Abbreviate your name - Write a function that returns the abbreviated version of your name with the letters seperated by a "."')
 
+
+let abbreviate = (name) => {
+    let yourName = name.split(' ')
+    let initials = []
+    for(let i = 0; i < yourName.length; i++) {
+        initials.push(yourName[i][0] + '. ')
+    }
+    console.log(initials.join(''))
+}
+abbreviate("Leanne M Keenan")
 codewarsAnswer1.textContent = `- `
 console.log('')
 
