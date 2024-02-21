@@ -211,11 +211,23 @@ console.log('')
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Reverse Sequnce - Write a function that returns an array of integers from n to 1 where n > 0'
+console.log('3. Reverse Sequnce - Write a function that returns an array of integers from n to 1 where n > 0')
 
-codewarsAnswer3.textContent = `- `
+let countdown = (n) => {
+    let sequence = []
+    for(let i = 0; i <= n; i++) {
+        sequence.push(i)  
+        let last = sequence[sequence.length - 1];
+        if(i === 0) {
+            sequence.push('blastoff')
+        } 
+    }
+    
+    console.log(sequence.reverse())
+}
+countdown(3)
+codewarsAnswer3.textContent = `- let countdown = ${countdown}`
 console.log('')
 
 
@@ -223,11 +235,17 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Sum of arrays - write a function that takes an array of numbers and returns the sum of the numbers'
+console.log('4. Sum of arrays - write a function that takes an array of numbers and returns the sum of the numbers')
 
-codewarsAnswer4.textContent = `- `
+let sumOfArray = (arr) => {
+    let sum = arr.reduce((a, b) => a + b)
+    console.log(sum);
+}
+
+sumOfArray([-1, 2, 3, 4, 5])
+
+codewarsAnswer4.textContent = `- let sumOfArray = ${sumOfArray}`
 console.log('')
 
 
@@ -235,10 +253,20 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. consonant count - count the total number of consonants in a string'
+console.log('5. consonant count - count the total number of consonants in a string')
 
+let consonantCount = (string) => {
+    let vowel = /[aeiou]/ig;
+    let total = 0;
+    for(let i = 0; i < string.length; i++) {
+        if(!string[i].match(vowel)) {
+            total++;
+        }
+    }
+    console.log(total)
+}
+consonantCount('hello')
 codewarsAnswer5.textContent = `- `
 console.log('')
 
