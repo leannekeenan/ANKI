@@ -186,22 +186,25 @@ console.log('')
 codewarsQuestion2.textContent = '2. Points Per Game - create two functions:  the first will be a constructor for NBA players using parameters for their name, team, and points scored. The second function will accept the player objects created by the first function and return a sum of their point totals'
 console.log('2. Points Per Game - create two functions:  the first will be a constructor for NBA players using parameters for their name, team, and points scored. The second function will accept the player objects created by the first function and return a sum of their point totals')
 
-function NBA (name, team, points) {
+let pointsPerGame = () =>  {
+    function NBA (name, team, points) {
     this.name = name,
     this.team = team,
     this.points = points;
+    }
+
+    let p1 = new NBA("player1", 'team1', 181);
+    let p2 = new NBA("player2", 'team1', 165);
+
+    let PPG = (p1, p2) => {
+        console.log(p1.points + p2.points)
+    }
+    PPG(p1, p2)
 }
-
-let p1 = new NBA("player1", 'team1', 181);
-let p2 = new NBA("player2", 'team1', 165);
-
-let PPG = (p1, p2) => {
-    console.log(p1.points + p2.points)
-}
-PPG(p1, p2)
+pointsPerGame()
 
 
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `let pointsPerGame = ${pointsPerGame}`
 console.log('')
 
 
