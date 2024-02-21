@@ -106,22 +106,22 @@ console.log('')
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. touch'
+console.log('8. touch')
+console.log('creates a new file withina directory')
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `- creates a new file withina directory`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. clear'
+console.log('9. clear')
+console.log('Command used to clear previous commands in the CLI')
 
-reviewAnswer9.textContent = `- `
+reviewAnswer9.textContent = `- Command used to clear previous commands in the CLI`
 console.log('')
 
 
