@@ -128,11 +128,11 @@ console.log('')
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. grep -i'
+console.log('10. grep -i')
+console.log('Global Regular Expression Print, but case sensitive')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = `- Global Regular Expression Print, but case sensitive`
 console.log('')
 
 
