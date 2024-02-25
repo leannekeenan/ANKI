@@ -163,9 +163,24 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Consonant Count - write a function that counts the number of consonants in a string'
+console.log('1. Consonant Count - write a function that counts the number of consonants in a string')
+
+let consonantCount = (string) => {
+    let vowels = /[aeiou]/ig;
+    let count = 0;
+
+    for(let i = 0; i < string.length; i++) {
+        if(!string[i].match(vowels)) {
+            count += 1
+        }
+        if(string[i] === ' ') {
+            count -= 1
+        }
+    }
+    console.log(count)
+}
+consonantCount('hello world')
 
 codewarsAnswer1.textContent = `- `
 console.log('')
