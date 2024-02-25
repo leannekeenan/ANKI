@@ -108,17 +108,17 @@ console.log('')
 //8.
 reviewQuestion8.textContent = '8. What is a mark up language?'
 console.log('8. What is a mark up language?')
-console.log('')
+console.log('A set of rules and syntax used to write and structure text and data in a document organizing how the content should be displayed')
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `- A set of rules and syntax used to write and structure text and data in a document organizing how the content should be displayed`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
+reviewQuestion9.textContent = '9. gzip compression'
+console.log('9. gzip compression')
 console.log('')
 
 reviewAnswer9.textContent = `- `
