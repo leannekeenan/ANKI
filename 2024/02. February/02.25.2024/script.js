@@ -50,56 +50,56 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+reviewQuestion3.textContent = '3. SMACSS: Theme'
+console.log('3. SMACSS: Theme')
+console.log('A segment of the SMACSS structure that correlates with elements that have a thematic visual connection such as color, font, spacing, borders, etc., helping to keep your code DRY')
 
-reviewAnswer3.textContent = `- `
+reviewAnswer3.textContent = `- A segment of the SMACSS structure that correlates with elements that have a thematic visual connection such as color, font, spacing, borders, etc., helping to keep your code DRY`
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. Name four ways to make embeddded media flexible?'
+console.log('4. Name four ways to make embeddded media flexible?')
+console.log('1. Place media within a block element and use inset properties - 2. use object-fit property to have media inherit size property of its parent container -  3. use sizing attribute - 4. use percentages')
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = `- 1. Place media within a block element and use inset properties - 2. use object-fit property to have media inherit size property of its parent container -  3. use sizing attribute - 4. use percentages`
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. what is a web browser?'
+console.log('5. what is a web browser?')
+console.log('a program used to access the internet')
 
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = `- a computer program used to access the internet`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
+reviewQuestion6.textContent = '6. Flexible Media'
+console.log('6. Flexible Media')
+console.log('Objects that adjust their size in response to the size of teh viewport of the web browser is it rendered on')
 
-reviewAnswer6.textContent = `- `
+reviewAnswer6.textContent = `- Objects that adjust their size in response to the size of teh viewport of the web browser is it rendered on`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. CSS Grid'
+console.log('7. CSS Grid')
+console.log(' A CSS display option allowing content to be organized in a 2 - dimentional organizational pattern rather than a left-to-right or a top-to bottom one-dimention format of the flexbox')
 
-reviewAnswer7.textContent = `- `
+reviewAnswer7.textContent = `- A CSS display option allowing content to be organized in a 2 - dimentional organizational pattern rather than a left-to-right or a top-to bottom one-dimention format of the flexbox`
 console.log('')
 
 
