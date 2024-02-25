@@ -197,6 +197,7 @@ let sumOfMultiples = (n, m) => {
         sum.push(m * i)
         total = sum.reduce((a, b) => a + b, 0)
     }
+  
     console.log(sum)
     console.log(total)
 }
@@ -210,9 +211,19 @@ console.log('')
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Abbreviate your name - write a function thet reduces a full name to its initials seperated with a "."'
+console.log('3. Abbreviate your name - write a function thet reduces a full name to its initials seperated with a "."')
+
+let abbreviation = (string) => {
+    let name = string.split(' ')
+    let initials = []
+    for(let i = 0; i < name.length; i++) {
+        let initial = name[i][0];
+        initials.push(initial + '. ')
+    }
+    console.log(initials.join(''))
+}
+abbreviation('Leanne Michelle Keenan')
 
 codewarsAnswer3.textContent = `- `
 console.log('')
@@ -222,9 +233,22 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Youre a square - write a function that determines if a number is or is not a square and return the proper response'
+console.log('4. Youre a square - write a function that determines if a number is or is not a square and return the proper response')
+
+
+let square = (n) => {
+    let squareRoot = Math.sqrt(n);
+    if(squareRoot % 1 === 0) {
+        console.log(squareRoot)
+    }
+    else {
+        console.log('not square')
+    }
+}
+square(25)
+square(13)
+square(100)
 
 codewarsAnswer4.textContent = `- `
 console.log('')
@@ -234,9 +258,14 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. convert a num to a reversed array - given a random number, return the digits in reverse order'
+console.log('5. convert a num to a reversed array - given a random number, return the digits in reverse order')
+
+let reversedArray = (num) => {
+    let arr = num.split('').reverse('')
+    console.log(arr.join(''))
+}
+reversedArray('12345')
 
 codewarsAnswer5.textContent = `- `
 console.log('')
