@@ -119,20 +119,20 @@ console.log('')
 //9.
 reviewQuestion9.textContent = '9. gzip compression'
 console.log('9. gzip compression')
-console.log('')
+console.log('reduces file size for faster data transmission by compressing web content before sending it to browsers')
 
-reviewAnswer9.textContent = `- `
+reviewAnswer9.textContent = `- reduces file size for faster data transmission by compressing web content before sending it to browsers`
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. measure image compression'
+console.log('10. measure image compression')
+console.log('(fileSize - compressionfileSize) / orignalFileSize * 100%')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = `- (fileSize - compressionfileSize) / orignalFileSize * 100%`
 console.log('')
 
 
