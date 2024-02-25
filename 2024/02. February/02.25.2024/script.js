@@ -27,22 +27,22 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 //1.
-reviewQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+reviewQuestion1.textContent = '1. Program Base Directory'
+console.log('1. Program Base Directory')
+console.log('The program  base directory is the primary file container that holds all of the related content for a file, folder, project, site, etc.')
 
-reviewAnswer1.textContent = `- `
+reviewAnswer1.textContent = `- The program  base directory is the primary file container that holds all of the related content for a file, folder, project, site, etc.`
 console.log('')
 
 
 
 
 //2.
-reviewQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+reviewQuestion2.textContent = '2. What are thr two largest common pitrfalls to preformance in web development'
+console.log('2. What are thr two largest common pitrfalls to preformance in web development')
+console.log('content that is not compressed and embedded JavaScript')
 
-reviewAnswer2.textContent = `- `
+reviewAnswer2.textContent = `- content that is not compressed and embedded JavaScript`
 console.log('')
 
 
