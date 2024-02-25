@@ -187,9 +187,21 @@ console.log('')
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Sum of multiplkes - write a function that returns the sum of all the multiples between 0 and the number parameter'
+console.log('2. Sum of multiplkes - write a function that returns the sum of all the multiples between 0 and the number parameter')
+
+let sumOfMultiples = (n, m) => {
+    let sum = [];
+    let total;
+    for(let i = 0; i * m <= n; i++) {
+        sum.push(m * i)
+        total = sum.reduce((a, b) => a + b, 0)
+    }
+    console.log(sum)
+    console.log(total)
+}
+sumOfMultiples(10, 2)
+
 
 codewarsAnswer2.textContent = `- `
 console.log('')
