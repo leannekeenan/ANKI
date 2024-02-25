@@ -106,8 +106,8 @@ console.log('')
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
+reviewQuestion8.textContent = '8. What is a mark up language?'
+console.log('8. What is a mark up language?')
 console.log('')
 
 reviewAnswer8.textContent = `- `
