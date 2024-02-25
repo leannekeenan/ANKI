@@ -168,15 +168,13 @@ console.log('1. Consonant Count - write a function that counts the number of con
 
 let consonantCount = (string) => {
     let vowels = /[aeiou]/ig;
+    let alpha = /[a-zA-Z]/ig
     let count = 0;
 
     for(let i = 0; i < string.length; i++) {
-        if(!string[i].match(vowels)) {
+        if(!string[i].match(vowels) && string[i].match(alpha)) {
             count += 1
-        }
-        if(string[i] === ' ') {
-            count -= 1
-        }
+        } 
     }
     console.log(count)
 }
