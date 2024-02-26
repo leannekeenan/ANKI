@@ -182,7 +182,7 @@ let testScores = (group, individual) => {
 }
 testScores([79, 95, 80], 85)
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `- let testScores = ${testScores}`
 console.log('')
 
 
@@ -198,7 +198,7 @@ let chuckNorris = (string) => {
 chuckNorris('Can kick my butt')
 
 
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `- let chuckNorris = ${chuckNorris}`
 console.log('')
 
 
@@ -221,7 +221,7 @@ let doYouHave = (string, character) => {
     console.log(count)
 }
 doYouHave('hello there my dear, welcome ', 'z')
-codewarsAnswer3.textContent = `- `
+codewarsAnswer3.textContent = `- let doYouHave = ${doYouHave}`
 console.log('')
 
 
@@ -247,7 +247,7 @@ let consonants = (string) => {
 }
 consonants('hello good')
 
-codewarsAnswer4.textContent = `- `
+codewarsAnswer4.textContent = `- let consonants = ${consonants}`
 console.log('')
 
 
@@ -271,7 +271,7 @@ let square = (n) => {
 square(25);
 square(15)
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = `- let square = ${square}`
 console.log('')
 
 
