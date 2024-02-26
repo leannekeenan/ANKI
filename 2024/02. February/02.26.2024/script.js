@@ -163,9 +163,24 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. How good are you really - write a function that accepts an array of tests scores and an individual score.  Determine if the singular score is greater or less than the average of the group'
+console.log('1. How good are you really - write a function that accepts an array of tests scores and an individual score.  Determine if the singular score is greater or less than the average of the group')
+
+
+let testScores = (group, individual) => {
+    console.log('individual: ' + individual)
+    console.log('group: ' + group)
+    let average = (group.reduce((a, b) => a + b, 0) / group.length - 1);
+    console.log('average : ' + average)
+    if(individual > average) {
+        console.log(true)
+    }
+    else {
+        console.log(false)
+    }
+    console.log(average)
+}
+testScores([79, 95, 80], 85)
 
 codewarsAnswer1.textContent = `- `
 console.log('')
@@ -174,9 +189,14 @@ console.log('')
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Chuck Norrris -  Wrtie a function thet returns false whthout using the word "false"'
+console.log('2. Chuck Norrris -  Wrtie a function thet returns false whthout using the word "false"')
+
+let chuckNorris = (string) => {
+    console.log(!true)
+}
+chuckNorris('Can kick my butt')
+
 
 codewarsAnswer2.textContent = `- `
 console.log('')
