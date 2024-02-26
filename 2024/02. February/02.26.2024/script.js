@@ -205,10 +205,22 @@ console.log('')
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Does the string contain a character - write a function that accepts a string and a character.  Check the string if it contains he character and return the number of times it appears in the string. If it is not in the string, return 0.'
+console.log('3. Does the string contain a character - write a function that accepts a string and a character.  Check the string if it contains he character and return the number of times it appears in the string. If it is not in the string, return 0.')
 
+let doYouHave = (string, character) => {
+    let count = 0;
+    for(let i = 0; i < string.length; i++) {
+        if(string[i].match(character)) {
+            count += 1
+        }
+        else {
+            count += 0
+        }
+    }
+    console.log(count)
+}
+doYouHave('hello there my dear, welcome ', 'z')
 codewarsAnswer3.textContent = `- `
 console.log('')
 
@@ -217,9 +229,23 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Consonant Count - write a function that counts the consonants in a string'
+console.log('4. Consonant Count - write a function that counts the consonants in a string')
+
+let consonants = (string) => {
+    let vowels = /[aeiou]/ig;
+    let alpha = /[a-zA-Z]/ig;
+    let count = 0
+
+    for(let i = 0; i < string.length; i++) {
+        if(!string[i].match(vowels) && string[i].match(alpha)) {
+            count += 1
+        }
+    
+    }
+    console.log(count)
+}
+consonants('hello good')
 
 codewarsAnswer4.textContent = `- `
 console.log('')
@@ -229,9 +255,21 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Youre a square - write a function that tests if a number is or is not a perfect square'
+console.log('5. Youre a square - write a function that tests if a number is or is not a perfect square')
+
+let square = (n) => {
+    let perfectSquare = Math.sqrt(n);
+    console.log(perfectSquare)
+    if(perfectSquare % 1 === 0) {
+        console.log(true)
+    }
+    else {
+        console.log(false)
+    }
+}
+square(25);
+square(15)
 
 codewarsAnswer5.textContent = `- `
 console.log('')
