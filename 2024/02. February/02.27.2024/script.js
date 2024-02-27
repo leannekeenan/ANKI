@@ -165,7 +165,7 @@ console.log('Codewars Challenges')
 codewarsQuestion1.textContent = '1. Does the string contain a character - write a function that accepts a string ans a letter.  Check the string to see if it contains the character and return te number of instances it appears'
 console.log('1. Does the string contain a character - write a function that accepts a string ans a letter.  Check the string to see if it contains the character and return te number of instances it appears')
 
-let doeItContain = (string, letter) => { 
+let doesItContain = (string, letter) => { 
     let count = 0;
     for(let i = 0; i < string.length; i++) {
         if(string[i].match(letter)) {
@@ -177,31 +177,65 @@ let doeItContain = (string, letter) => {
     }
     console.log(count)
 }
-doeItContain('hello', ' ')
+doesItContain('hello', ' ')
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `- let doesItContain = ${doesItContain}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. How good are you really? - Write a function that accepts an array of scores and a single score.  Check to see if the single score if greater or less than the average of teh array of scores.  Return true or false accordingly.'
+console.log('2. How good are you really? - Write a function that accepts an array of scores and a single score.  Check to see if the single score if greater or less than the average of teh array of scores.  Return true or false accordingly.')
 
-codewarsAnswer2.textContent = `- `
+
+let areYouBetter = (array, score) => {
+    let average = (array.reduce((a, b) => a + b, 0)) / array.length - 1;
+    console.log(average)
+    if(average > score) {
+        console.log(false)
+    }
+    else if(average < score) {
+        console.log(true)
+    }
+    else if(average === score) {
+        console.log('tie')
+    }
+}
+areYouBetter([67, 78, 89], 90);
+areYouBetter([67, 78, 89], 75);
+areYouBetter([67, 78, 89], 77);
+
+
+codewarsAnswer2.textContent = `- let areYouBetter = ${areYouBetter}`
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Keep Hydrated - write a function that calculates how much water you should drink.  Assume you need 0.5 liters per hour, but you want to return whole numbers only rounded to the smaallest value'
+console.log('3. Keep Hydrated - write a function that calculates how much water you should drink.  Assume you need 0.5 liters per hour, but you want to return whole numbers only rounded to the smaallest value')
 
-codewarsAnswer3.textContent = `- `
+let hydration = (hour) => {
+    let total = Math.floor(hour * 0.5);
+
+    if(hour === 0) {
+        console.log(0)
+    }
+
+    else if(hour < 2) {
+        console.log(1)
+    } 
+    else {
+        console.log(total)
+    }
+    
+}
+hydration(6)
+
+codewarsAnswer3.textContent = `- let hydration = ${hydration}`
 console.log('')
 
 
@@ -209,11 +243,17 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Convert Number to Reversed Array of Digits - Write a function that accepts a ramdom non-negative number and returns the digits of the bumber in a reversed array sequence'
+console.log('4. Convert Number to Reversed Array of Digits - Write a function that accepts a ramdom non-negative number and returns the digits of the bumber in a reversed array sequence')
 
-codewarsAnswer4.textContent = `- `
+let reverseSequence = (n) => {
+    let number = n.split('').reverse();
+    console.log(n)
+    console.log(number)
+}
+reverseSequence('12345')
+
+codewarsAnswer4.textContent = `- let reverseSequence = ${reverseSequence}`
 console.log('')
 
 
@@ -221,9 +261,14 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Sum of Array - Write a function that accepts a array of numbers and returns the sum of teh elements values'
+console.log('5. Sum of Array - Write a function that accepts a array of numbers and returns the sum of teh elements values')
+
+let sumOfArray = (array) => {
+    let sum = array.reduce((a, b) => a + b);
+    console.log(sum)
+}
+sumOfArray([1, 2, 3, 4, -5])
 
 codewarsAnswer5.textContent = `- `
 console.log('')
