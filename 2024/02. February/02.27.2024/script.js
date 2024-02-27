@@ -31,15 +31,17 @@ reviewQuestion1.textContent = '1. Prefix match attribute selector'
 console.log('1. Prefix match attribute selector')
 console.log('A CSS selector that targets elements that have a value that starts with a specified string using the caret (^)symbol')
 
-reviewAnswer1.textContent = `- A CSS selector that targets elements that have a value that starts with a specified string using the caret (^)symbol`
+reviewAnswer1.textContent = `- A CSS selector that targets elements that have a value that starts with a specified string using the caret (^)symbol. span[class^="date"] {
+    background: grey;
+}`
 console.log('')
 
 
 
 
 //2.
-reviewQuestion2.textContent = '2. '
-console.log('2. ')
+reviewQuestion2.textContent = '2. Direct Child Selector'
+console.log('2. Direct Child Selector')
 console.log('')
 
 reviewAnswer2.textContent = `- `

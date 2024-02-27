@@ -4,3 +4,7 @@
     margin: 1rem auto;
     background: green;
 }
+
+span[class^="date"] {
+    background: grey;
+}
