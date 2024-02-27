@@ -270,7 +270,7 @@ let sumOfArray = (array) => {
 }
 sumOfArray([1, 2, 3, 4, -5])
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = `- let sumOfArray = ${sumOfArray}`
 console.log('')
 
 
