@@ -162,9 +162,22 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Does the string contain a character - write a function that accepts a string ans a letter.  Check the string to see if it contains the character and return te number of instances it appears'
+console.log('1. Does the string contain a character - write a function that accepts a string ans a letter.  Check the string to see if it contains the character and return te number of instances it appears')
+
+let doeItContain = (string, letter) => { 
+    let count = 0;
+    for(let i = 0; i < string.length; i++) {
+        if(string[i].match(letter)) {
+            count += 1
+        }
+        else {
+            count += 0
+        }
+    }
+    console.log(count)
+}
+doeItContain('hello', ' ')
 
 codewarsAnswer1.textContent = `- `
 console.log('')
