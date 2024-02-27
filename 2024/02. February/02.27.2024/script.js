@@ -42,99 +42,96 @@ console.log('')
 //2.
 reviewQuestion2.textContent = '2. "resolution" media feature'
 console.log('2. "resolution" media feature')
-console.log('used to specify the resol')
+console.log('used to specify the resolution of a device as a breakpoint for style application')
 
-reviewAnswer2.textContent = `- used to specify the resol`
+reviewAnswer2.textContent = `- used to specify the resolution of a device as a breakpoint for style application`
 console.log('')
-
-
-
 
 
 //3.
-reviewQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+reviewQuestion3.textContent = '3. Relative Length Units'
+console.log('3. Relative Length Units')
+console.log('Percentage, rem, em, vh, vw')
 
-reviewAnswer3.textContent = `- `
+reviewAnswer3.textContent = `- Percentage, rem, em, vh, vw`
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. clearfix'
+console.log('4. clearfix')
+console.log('a CSS Selector that allows objects that share space with an object that uses a float property to be removed from its flow and overriding the float property')
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = `- a CSS Selector that allows objects that share space with an object that uses a float property to be removed from its flow and overriding the float property`
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. Form input types'
+console.log('5. Form input types')
+console.log('text, tel, number, password, select, option, button, date, time, color, range, url')
 
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = `- text, tel, number, password, select, option, button, date, time, color, range, url`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
+reviewQuestion6.textContent = '6. What technique can you use to contain floats overflow content'
+console.log('6. What technique can you use to contain floats overflow content')
+console.log('1. Set the container to flex and add the flex wrap property with the wrap value, 2. use overflow: hidden to hide the overflow, 3. use "clearfix" to a parent class of the overflow element, 4. use the "float" property, 5. use the "grid" property to organize the content in two dimentions')
 
-reviewAnswer6.textContent = `- `
+reviewAnswer6.textContent = `- 1. Set the container to flex and add the flex wrap property with the wrap value, 2. use overflow: hidden to hide the overflow, 3. use "clearfix" to a parent class of the overflow element, 4. use the "float" property, 5. use the "grid" property to organize the content in two dimentions`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. prefix match attribute selector'
+console.log('7. prefix match attribute selector')
+console.log('"^".  Used to select objects that have the matching attribute selector. {class^="value"}')
 
-reviewAnswer7.textContent = `- `
+reviewAnswer7.textContent = `- "^".  Used to select objects that have the matching attribute selector. obj[class^="value"]`
 console.log('')
 
 
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. Table Structure'
+console.log('8. Table Structure')
+console.log('The <table> tag holds table content. the <thead> tag holds the table header, <tbody> holds the body of the content of a table, <tr> is table row, <th> gives the table a header, <td> holds table data')
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `- The <table> tag holds table content. the <thead> tag holds the table header, <tr> is table row, <th> gives the table a header, <td> holds table data `
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. Grid'
+console.log('9. Grid')
+console.log('CSS property thast allows content to be organized in two dimensions')
 
-reviewAnswer9.textContent = `- `
+reviewAnswer9.textContent = `- CSS property thast allows content to be organized in two dimensions`
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. <aside>'
+console.log('10. <aside>')
+console.log('HTML tag used to include content in a webpage that does not necessarially have any relation to the content - such as ads and external links outside of the main content.  Used to replace the banner tag')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = `- HTML tag used to include content in a webpage that does not necessarially have any relation to the content - such as ads and external links outside of the main content.  Used to replace the banner tag`
 console.log('')
 
 
