@@ -40,11 +40,11 @@ console.log('')
 
 
 //2.
-reviewQuestion2.textContent = '2. Direct Child Selector'
-console.log('2. Direct Child Selector')
-console.log('')
+reviewQuestion2.textContent = '2. "resolution" media feature'
+console.log('2. "resolution" media feature')
+console.log('used to specify the resol')
 
-reviewAnswer2.textContent = `- `
+reviewAnswer2.textContent = `- used to specify the resol`
 console.log('')
 
 
