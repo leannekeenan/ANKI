@@ -1,5 +1,5 @@
 /*ANKI Review: */
-console.log('ANKI Review:')
+console.log('ANKI Review: CSS Review')
 let reviewQuestion1 = document.getElementById('rq1')
 let reviewQuestion2 = document.getElementById('rq2')
 let reviewQuestion3 = document.getElementById('rq3')
@@ -27,11 +27,11 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 //1.
-reviewQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+reviewQuestion1.textContent = '1. Prefix match attribute selector'
+console.log('1. Prefix match attribute selector')
+console.log('A CSS selector that targets elements that have a value that starts with a specified string using the caret (^)symbol')
 
-reviewAnswer1.textContent = `- `
+reviewAnswer1.textContent = `- A CSS selector that targets elements that have a value that starts with a specified string using the caret (^)symbol`
 console.log('')
 
 
