@@ -199,8 +199,8 @@ console.log('')
 
 
 //2.
-codewarsQuestion2.textContent = '2. Sale Price - write a function that accepts two parameters: price and count.  Have the function return a two for one value for each purchase'
-console.log('2. Sale Price - write a function that accepts two parameters: price and count.  Have the function return a two for one value for each purchase')
+codewarsQuestion2.textContent = '2. Sale Price - write a function that accepts two parameters: price and count.  Have the function return a three for two value for each purchase'
+console.log('2. Sale Price - write a function that accepts two parameters: price and count.  Have the function return a three for two value for each purchase')
 
 let purchase = (count, price) => {
     let discount = count - Math.floor(count / 3);
@@ -209,18 +209,24 @@ let purchase = (count, price) => {
 }
 purchase(3, 2)
 
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `let purchase = ${purchase}`
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. find the min and max of a list - write a function that accepts a list of random numbers, return the largest and smallest values'
+console.log('3. find the min and max of a list - write a function that accepts a list of random numbers, return the largest and smallest values')
 
-codewarsAnswer3.textContent = `- `
+let M = (list) => {
+    let max = Math.max(...list);
+    let min = Math.min(...list);
+    console.log(`max: ${max} | min: ${min}`)
+}
+M([1, 2, 3, 4, 5])
+
+codewarsAnswer3.textContent = `- let M = ${M}`
 console.log('')
 
 
@@ -228,11 +234,20 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Will the Hero Survive - write a function that tells the story of a hero.  The hero is storming a castle to defeat dragons.  Each dragon takes two hits to be defeated by his magic wand, but he does not know how many spellslots there are or how many dragons there are.  Write a function that determins if he will survide an encounter'
 
-codewarsAnswer4.textContent = `- `
+console.log('4. Will the Hero Survive - write a function that tells the story of a hero.  The hero is storming a castle to defeat dragons.  Each dragon takes two hits to be defeated by his magic wand, but he does not know how many spellslots there are or how many dragons there are.  Write a function that determins if he will survide an encounter')
+
+let dungeon = (dragon, spellslots) => {
+    if(spellslots < dragon * 2) {
+        console.log('fail')
+    }
+    else {
+        console.log('succeed')
+    }
+}
+dungeon(2, 5)
+codewarsAnswer4.textContent = `- let dungeon = ${dungeon}`
 console.log('')
 
 
@@ -240,9 +255,23 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. How mgood are you really - write a function that accepts an array and a single value.  determine if the value is greater or less than the array average value'
+console.log('5. How mgood are you really - write a function that accepts an array and a single value.  determine if the value is greater or less than the array average value')
+
+let score = (arr, me) => {
+    let average = (arr.reduce((a, b) => a + b, 0)) / arr.length - 1
+    if(me > average) {
+        console.log(true)
+    }
+    else if(me === average) {
+        console.log('tie');
+    }
+    else if(me < average) {
+        console.log(false)
+    }
+}
+
+score([67, 78, 89, 90], 95)
 
 codewarsAnswer5.textContent = `- `
 console.log('')
