@@ -182,20 +182,32 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Cypher - write a function that accepts a string and returns it with its letters shiftted by 5 - as in A becomes F and so on'
+console.log('1. Cypher - write a function that accepts a string and returns it with its letters shiftted by 5 - as in A becomes F and so on')
 
-codewarsAnswer1.textContent = `- `
+let cypher = (string) => {
+    let alpha = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM'
+    let result = string.replace(/[a-z]/gi,(c => alpha[alpha.indexOf(c) + 5]));
+    console.log(result)
+}
+cypher('a hello')
+
+codewarsAnswer1.textContent = ` let cypher = ${cypher}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Sale Price - write a function that accepts two parameters: price and count.  Have the function return a two for one value for each purchase'
+console.log('2. Sale Price - write a function that accepts two parameters: price and count.  Have the function return a two for one value for each purchase')
+
+let purchase = (count, price) => {
+    let discount = count - Math.floor(count / 3);
+    let purchasePrice = discount * price;
+    console.log(purchasePrice)
+}
+purchase(3, 2)
 
 codewarsAnswer2.textContent = `- `
 console.log('')
