@@ -271,9 +271,9 @@ let score = (arr, me) => {
     }
 }
 
-score([67, 78, 89, 90], 95)
+score([67, 78, 89, 90], 80)
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = `let score = ${score}`
 console.log('')
 
 
