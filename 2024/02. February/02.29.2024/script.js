@@ -142,7 +142,7 @@ console.log('')
 //7.
 reviewQuestion7.textContent = '7. .keys()'
 console.log('7. .keys()')
-console.log('REturns the index value of each aarray element')
+console.log('Returns the index value of each array element')
 let keysMethod = () => {
     let array = [1, 2, 3];
     let keys = array.keys();
@@ -152,40 +152,62 @@ let keysMethod = () => {
 }
 keysMethod()
 
-reviewAnswer7.textContent = `- REturns the index value of each aarray element`
+reviewAnswer7.textContent = `- Returns the index value of each array element`
 console.log('')
 
 
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. .flat()'
+console.log('8. .flat()')
+console.log('used to flatten multyiple nested arrays into a single array')
 
-reviewAnswer8.textContent = `- `
+let flatMethod = () => {
+    let array = [1, [2, [3]]];
+    let flat = array.flat().flat()
+    console.log(flat)
+}
+flatMethod()
+
+
+reviewAnswer8.textContent = `- used to flatten multyiple nested arrays into a single array`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. .from()'
+console.log('9. .from()')
+console.log('usd to create an array from the provided values reguardless of type')
 
-reviewAnswer9.textContent = `- `
+let fromMethod = () => {
+    let array = Array.from(['hello', true, 100]);
+    console.log(array)
+}
+fromMethod()
+
+reviewAnswer9.textContent = `- usd to create an array from the provided values reguardless of type`
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. .unshift()'
+console.log('10. .unshift()')
+console.log('removes an element from the start of an array')
 
-reviewAnswer10.textContent = `- `
+let unshift = () => {
+    let array = [1, 2, 3];
+    let unshift = array.unshift(0)
+
+    console.log(array) //adds 0 to start
+    console.log(unshift)//returns length of array
+}
+unshift()
+reviewAnswer10.textContent = `- removes an element from the start of an array`
 console.log('')
 
 
