@@ -303,16 +303,29 @@ let divisibleByIndex = (arr) => {
     console.log(newArray)
 }
 divisibleByIndex([0, 1, 3, 5, 7, 9, 12, 14, 15, 27, 100])
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `- let divisableByIndex = ${divisibleByIndex}`
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Multiples of 3 $ 5 - write a function that accepts an array and returns the sum of all its elements that are divisible by 3 $ 5'
+console.log('3. Multiples of 3 $ 5 - write a function that accepts an array and returns the sum of all its elements that are divisible by 3 $ 5')
+
+let divBy = (arr) => {
+    let total = []
+    for(let i = 0; i < arr.length; i++) {
+        let num = arr[i];
+        if(num % 5 === 0 && num % 3 === 0) {
+            total.push(num)
+        }
+    }
+    let sum = total.reduce((a, b) => a + b, 0)
+    console.log(total);
+    console.log(sum)
+}
+divBy([15, 45, 30, 20, 10, 6])
 
 codewarsAnswer3.textContent = `- `
 console.log('')
@@ -322,9 +335,25 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Going to the Cinema - write a function for a movie discount card.'
+console.log('4. Going to the Cinema - write a function for a movie discount card.')
+
+let cinema = (T, C, P) => {
+    let standard = 0;
+    let totalvisits = 0;
+    let discount = C;
+
+    while(Math.ceil(standard) >= Math.ceil(discount)) {
+        totalvisits++
+        standard += T * P
+        discount += T * Math.pow(P, totalvisits)  
+    }
+
+    console.log(standard)
+    console.log(discount)
+    console.log(totalvisits)
+}
+cinema(10, 500, .9)
 
 codewarsAnswer4.textContent = `- `
 console.log('')
