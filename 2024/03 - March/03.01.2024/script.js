@@ -264,21 +264,45 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
+codewarsQuestion1.textContent = '1. Friend or Foe - write a function that filters a list for your friends. The parameters are: your friends names have exactly 4 letters, otherwise they are not friends.'
+
+console.log('1. Friend or Foe - write a function that filters a list for your friends. The parameters are: your friends names have exactly 4 letters, otherwise they are not friends.')
+
+let friendOrFoe = (list) => {
+    let friends = [];
+    total = 0
+    for(let i = 0; i < list.length; i++) {
+        if(list[i].length === 4) {
+            friends.push(list[i])
+            total += 1
+        }
+    }
+    console.log(total);
+    console.log(friends);
+    
+}
+friendOrFoe(['ted', 'mark', 'thom', 'mary', 'genny'])
 console.log('')
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `- let friendOrFoe = ${friendOrFoe}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Is the index a multiple of the value  - write a function that checks an arrays values to determine of they are divisible by their index.  If so, push thhe values to a new array'
+console.log('2. Is the index a multiple of the value  - write a function that checks an arrays values to determine of they are divisible by their index.  If so, push thhe values to a new array')
 
+let divisibleByIndex = (arr) => {
+    let newArray = []
+    for(let i = 0; i < arr.length; i++) 
+    if(arr[i] % arr.indexOf(arr[i]) === 0) {
+        newArray.push(arr[i])
+    }
+    console.log(newArray)
+}
+divisibleByIndex([0, 1, 3, 5, 7, 9, 12, 14, 15, 27, 100])
 codewarsAnswer2.textContent = `- `
 console.log('')
 
