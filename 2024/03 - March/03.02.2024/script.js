@@ -120,33 +120,43 @@ console.log('')
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. parentElement.insertBefore(newElement, rferenceElement'
+console.log('8. parentElement.insertBefore(newElement, rferenceElement')
+console.log('DOM method used to insert a new object into the document usung a previously existing element as a reference for where it will be placed.')
+let insert = document.createElement('p');
+insert.textContent = 'Question 8: insertBefore Example';
+document.body.insertBefore(insert, createElementExample)
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `- DOM method used to insert a new object into the document usung a previously existing element as a reference for where it will be placed.`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. element.childNodes()'
+console.log('9. element.childNodes()')
+console.log('DOM method used to target all children related to a single element returning a node list representing each node element by, id, class, and tag type')
 
-reviewAnswer9.textContent = `- `
+let body = document.body;
+const children = body.childNodes
+
+children.forEach(child => {
+    console.log(child)
+})
+
+reviewAnswer9.textContent = `- DOM method used to target all children related to a single element returning a node list representing each node element by, id, class, and tag type`
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. element.setAttribute("attributeName", "value")'
+console.log('10. element.setAttribute("attributeName", "value")')
+console.log('DOM proerty used to set new attributes to DOM elements ')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = `- DOM proerty used to set new attributes to DOM elements `
 console.log('')
 
 
