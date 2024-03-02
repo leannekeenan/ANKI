@@ -106,11 +106,14 @@ console.log('')
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. element.getAttribute("attributeName")'
+console.log('7. element.getAttribute("attributeName")')
+console.log('DOM method used to retrieve the value of an attribute')
 
-reviewAnswer7.textContent = `- `
+let setArttributeExampleValue = setArttributeExample.getAttribute('style');
+console.log(setArttributeExampleValue)
+
+reviewAnswer7.textContent = `- DOM method used to retrieve the value of an attribute`
 console.log('')
 
 
