@@ -53,7 +53,7 @@ console.log('')
 reviewQuestion3.textContent = '3. document.createTextNode("text")'
 console.log('3. document.createTextNode("text")')
 console.log('used to add a node child text element to the document')
-let textNode = document.createTextNode('text node');
+let textNode = document.createTextNode('question 3: text node example  ');
 document.body.appendChild(textNode);
 reviewAnswer3.textContent = `- used to add a node child text element to the document`
 console.log('')
@@ -62,34 +62,44 @@ console.log('')
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
+reviewQuestion4.textContent = '4. element.setAttribute(attributeProperty = "attributeValue")'
+console.log('4. element.setAttribute(attributeProperty = "attributeValue")')
+console.log('DOM method used to add a CSS property to a JavaScript element not previously defined within the HTML')
+
+
+let setArttributeExample = document.createElement('span');
+setArttributeExample.textContent = 'Question 4: set Arttribute Example  '
+setArttributeExample.setAttribute('style', 'display: block; background-color: red');
+
+document.body.appendChild(setArttributeExample);
+
+reviewAnswer4.textContent = `- DOM method used to add a CSS property to a JavaScript element not previously defined within the HTML`
 console.log('')
-
-reviewAnswer4.textContent = `- `
-console.log('')
-
-
-
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. document.createElement("tagName")'
+console.log('5. document.createElement("tagName")')
+console.log('DOM method used to create a previously non-existing HTML element to the document')
 
+let createElementExample = document.createElement('p')
+createElementExample.textContent = 'Question 5: create element example';
+createElementExample.setAttribute('style', 'background: blue; color: white;margin: 0' );
+document.body.appendChild(createElementExample)
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = `- DOM method used to create a previously non-existing HTML element to the document`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
+reviewQuestion6.textContent = '6. element.previousSibling()'
+console.log('6. element.previousSibling()')
+console.log('DOM method used to target a child element that preceeds tehspecified element.')
 
-reviewAnswer6.textContent = `- `
+createElementExample.previousSibling.setAttribute('style', 'background-color: green')
+
+reviewAnswer6.textContent = `- DOM method used to target a child element that preceeds tehspecified element.`
 console.log('')
 
 
