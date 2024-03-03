@@ -285,8 +285,20 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
+codewarsQuestion4.textContent = '4. Multiples of 3 nd 5 - write a function that returns the sum of all multiples of 3 and 5 up to the value parameter'
+console.log('4. Multiples of 3 nd 5 - write a function that returns the sum of all multiples of 3 and 5 up to the value parameter')
+
+let multiplesOf = (n) => {
+    let values = [];
+    for(let i = 0; i < n; i++) {
+        if(i % 3 === 0 || i % 5 === 0) {
+            values.push(i)
+        }
+    }
+    let total = values.reduce((a, b) => a + b, 0)
+    console.log(total)
+}
+multiplesOf(10)
 console.log('')
 
 codewarsAnswer4.textContent = `- `
@@ -297,9 +309,23 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. do ... while - write a function with two parameters - string and number.  use a do while loop tp add astrisks to the right hand side if the number is even and left if it is odd.'
+console.log('5. do ... while - write a function with two parameters - string and number.  use a do while loop tp add astrisks to the right hand side if the number is even and left if it is odd.')
+
+let doWhileLoop = (str, num) => {
+    do {
+        if(num % 2 === 0) {
+            str = `*${str}`
+        }
+        else {
+            str = `${str}*`
+        }
+        num--
+    }
+    while(num > 0)
+    console.log(str)
+}
+doWhileLoop('Hello World', 6)
 
 codewarsAnswer5.textContent = `- `
 console.log('')
