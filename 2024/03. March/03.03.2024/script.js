@@ -1,5 +1,5 @@
 /*ANKI Review: */
-console.log('ANKI Review:')
+console.log('ANKI Review: Syntactical Expressions')
 let reviewQuestion1 = document.getElementById('rq1')
 let reviewQuestion2 = document.getElementById('rq2')
 let reviewQuestion3 = document.getElementById('rq3')
@@ -27,22 +27,31 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 //1.
-reviewQuestion1.textContent = '1. '
-console.log('1. ')
+reviewQuestion1.textContent = '1. Arrow function - explicit return'
+console.log('1. Arrow function - explicit return')
+console.log('let function = () => { //function executable}.  The explicit arrow function requires curly braces around the executuon function')
+
+reviewAnswer1.textContent = `- let function = () => { //function executable}.  The explicit arrow function requires curly braces around the executuon function`
 console.log('')
-
-reviewAnswer1.textContent = `- `
-console.log('')
-
-
 
 
 //2.
-reviewQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+reviewQuestion2.textContent = '2. for ... in loop'
+console.log('2. for ... in loop')
+console.log('Expression used to extract the index value of an array element and use the value in a condition expression. for example: let forInLoop = ${forInLoop}')
 
-reviewAnswer2.textContent = `- `
+let forInLoop = () => {
+    let arr = [1, 2, 3];
+
+    for(num in arr) {
+        console.log(num * 10)
+        console.log(arr[num] * 10)
+    }
+    //returns 0, 10, 20
+}
+forInLoop()
+
+reviewAnswer2.textContent = `- Expression used to extract the index value of an array element and use the value in a condition expression. for example: let forInLoop = ${forInLoop}`
 console.log('')
 
 
@@ -50,75 +59,122 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+reviewQuestion3.textContent = '3. do ... while loop'
+console.log('3. do ... while loop')
+console.log('executes a function while a set condition is met')
 
-reviewAnswer3.textContent = `- `
+let doWhile = () => {
+    let num = 0;
+    let i = 1;
+    do {
+        num += i
+    }
+    while(num < 10)
+    console.log(num)
+}
+doWhile()
+
+reviewAnswer3.textContent = `- executes a function while a set condition is met. letDoWhile = ${doWhile}`
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. fetch syntax'
+console.log('4. fetch syntax')
+console.log('fetch(url).then(res => if(!res.ok) { return new Error("result error")} else { return res.json() }.then(data => {}.catch(err => console.log(err, error))')
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = `- fetch(url).then(res => if(!res.ok) { return new Error("result error")} else { return res.json() }.then(data => {}.catch(err => console.log(err, error))`
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. forEach arrow function'
+console.log('5. forEach arrow function')
+console.log('Executes a providede condition on each element in an array and pushes the value to a new array. le tforEachArrowFunction = ${forEachArrowFunction}')
 
+let forEachArrowFunction = () => {
+    let arr = [1, 2, 3];
+    arr.forEach((n, i, newArr) => {newArr[i] = n * 10})
+    console.log(arr)
+}
+forEachArrowFunction()
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = `- Executes a providede condition on each element in an array and pushes the value to a new array. le tforEachArrowFunction = ${forEachArrowFunction}`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
+reviewQuestion6.textContent = '6. for ... of loop'
+console.log('6. for ... of loop')
+console.log('Used to execute a condition on each element value of an iterable object. let forOfLoop = ${forOfLoop}')
 
-reviewAnswer6.textContent = `- `
+let forOfLoop = () => {
+    let array = [1, 2, 3];
+
+    for(num of array) {
+        console.log(num * 10)
+    }
+}
+forOfLoop()
+
+reviewAnswer6.textContent = `- Used to execute a condition on each element value of an iterable object. let forOfLoop = ${forOfLoop}`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. while loop'
+console.log('7. while loop')
+console.log('executes a function while a specified condition is met')
 
-reviewAnswer7.textContent = `- `
+let whileLoop = () => {
+    let num = 0;
+    let i = 1;
+    while(num < 10) {
+        num += i
+    }
+    console.log(num)
+   
+}
+whileLoop()
+
+reviewAnswer7.textContent = `- executes a function while a specified condition is met`
 console.log('')
 
 
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. else statement'
+console.log('8. else statement')
+console.log('used in "of statements" to add a default condition to revert to if the "if " or "else if" loops are not met')
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `- used in "of statements" to add a default condition to revert to if the "if " or "else if" loops are not met`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
+reviewQuestion9.textContent = '9. Arrow function (ojbect Literal)'
+console.log('9. Arrow function (ojbect Literal)')
+
+let objectLiteralArrowFunction = () => {
+    function add (a, b, c) {
+        console.log(a + b + c)
+    }
+    let nums = [1, 2, 3];
+    add(...nums)
+}
+objectLiteralArrowFunction()
+
 console.log('')
 
 reviewAnswer9.textContent = `- `
@@ -128,11 +184,11 @@ console.log('')
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. traditional function'
+console.log('10. traditional function')
+console.log('function traditional () { //function conditions}; traditional()')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = `- function traditional () { //function conditions}; traditional()`
 console.log('')
 
 
