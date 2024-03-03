@@ -219,8 +219,26 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
+codewarsQuestion1.textContent = '1. Going to the Cinema - A movie theater has a promorion going on. Write a function that determines how many tickets a person needs to buy to make the discount card worth purchasing'
+
+let cinema = (ticketPrice, discountCard, discountPercentage) => {
+    let standardPurchase = 0;
+    let promotionDiscount = discountCard;
+    let visits = 0;
+
+    while(Math.ceil(standardPurchase) <= Math.ceil(promotionDiscount)) {
+        visits++;
+        standardPurchase += ticketPrice * visits;
+        promotionDiscount += Math.pow(ticketPrice, discountPercentage) * visits;
+    }
+    console.log(standardPurchase)
+    console.log(promotionDiscount)
+    console.log(visits)
+}
+
+cinema(10, 100, .9)
+
+console.log('1. Going to the Cinema - A movie theater has a promorion going on. Write a function that determines how many tickets a person needs to buy to make the discount card worth purchasing')
 console.log('')
 
 codewarsAnswer1.textContent = `- `
@@ -230,8 +248,15 @@ console.log('')
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
+codewarsQuestion2.textContent = '2. Casting Strings - convert all words in a string to upper case'
+console.log('2. Casting Strings - convert all words in a string to upper case')
+
+let casing = (string) => {
+    let newString = string.split(' ').map(i => i.replace(i[0], i[0].toUpperCase())).join(' ');
+    console.log(newString)
+}
+casing('hello world')
+
 console.log('')
 
 codewarsAnswer2.textContent = `- `
@@ -241,8 +266,15 @@ console.log('')
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
+codewarsQuestion3.textContent = '3. Max Multiples - Given a number to divide by and a set bound, find the largest value that is still less than the bound'
+console.log('3. Max Multiples - Given a number to divide by and a set bound, find the largest value that is still less than the bound')
+
+let maxMultiple = (multiple, value) => {
+    let max = Math.floor(value / multiple) * multiple
+        console.log(max)
+}
+maxMultiple(9, 100)
+
 console.log('')
 
 codewarsAnswer3.textContent = `- `
