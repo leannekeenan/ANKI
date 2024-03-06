@@ -163,9 +163,17 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Count by X - write a function with two arguements that will return an array of the multiples of a value. '
+console.log('1. Count by X - write a function with two arguements that will return an array of the multiples of a value. ')
+
+let multiplesOfX = (multiple, X) => {
+    let array = []
+    for(let i = 0; i * multiple <= X; i++) {
+        array += multiple * i + ' '
+    }
+    console.log(array)
+}
+multiplesOfX(9, 237)
 
 codewarsAnswer1.textContent = `- `
 console.log('')
