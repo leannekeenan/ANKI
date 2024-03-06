@@ -178,7 +178,7 @@ let friendOrFoe = (list) => {
 }
 friendOrFoe(['alex', 'max', 'lauren'])
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `- let friendOrFoe = ${friendOrFoe}`
 console.log('')
 
 
@@ -203,7 +203,7 @@ let asterisk = (string, n) => {
 }
 asterisk('hello', 5)
 
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `- let asterisk = ${asterisk}`
 console.log('')
 
 
@@ -225,7 +225,7 @@ let maxMultiples = (divisor, bound) => {
 
 maxMultiples(12, 100)
 
-codewarsAnswer3.textContent = `- `
+codewarsAnswer3.textContent = `- let maxMultiples = ${maxMultiples}`
 console.log('')
 
 
@@ -243,7 +243,7 @@ let priceChange = (item, price) => {
 }
 priceChange(3, 1)
 
-codewarsAnswer4.textContent = `- `
+codewarsAnswer4.textContent = `- let priceChange = ${priceChange}`
 console.log('')
 
 
@@ -254,13 +254,13 @@ console.log('')
 codewarsQuestion5.textContent = '5. Casing String - capitalize all the words in a string'
 console.log('5. Casing String - capitalize all the words in a string')
 
-let casting = (string) => {
+let casing = (string) => {
     let result = string.split(' ').map(word => word.replace(word[0], word[0].toUpperCase())).join(' ')
     console.log(result)
 }
-casting('hello world')
+casing('hello world')
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = `- let casing = ${casing}`
 console.log('')
 
 
