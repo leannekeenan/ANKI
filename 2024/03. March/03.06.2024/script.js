@@ -163,9 +163,20 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Friend or Foe - write a function to filter through a list of names and retuen only names with a length of 4'
+console.log('1. Friend or Foe - write a function to filter through a list of names and retuen only names with a length of 4')
+
+let friendOrFoe = (list) => {
+    let friends = []
+    for(let i = 0; i < list.length; i++) {
+        if(list[i].length === 4) {
+            friends.push(list[i]);
+            console.log(friends)
+        }
+    }
+    
+}
+friendOrFoe(['alex', 'max', 'lauren'])
 
 codewarsAnswer1.textContent = `- `
 console.log('')
@@ -174,9 +185,23 @@ console.log('')
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Do...While Loop - write a function that acepts a string and a numerical value.  When the value is even, add an asterisk to the right of the string element.  When it is odd, add an asterisk to the left.'
+console.log('2. Do...While Loop - write a function that acepts a string and a numerical value.  When the value is even, add an asterisk to the right of the string element.  When it is odd, add an asterisk to the left.')
+
+let asterisk = (string, n) => {
+    do {
+        if(n % 2 === 0) {
+            string = `${string} *`
+        }
+        else {
+            string = `* ${string}`
+        }
+        n--
+    }
+    while(n > 0)
+    console.log(string)   
+}
+asterisk('hello', 5)
 
 codewarsAnswer2.textContent = `- `
 console.log('')
@@ -185,9 +210,20 @@ console.log('')
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Max Multiples - Given a divisor and a bound, return the largest value divisible by the divisor, greater than 0, and less than the bound'
+console.log('3. Max Multiples - Given a divisor and a bound, return the largest value divisible by the divisor, greater than 0, and less than the bound')
+
+let maxMultiples = (divisor, bound) => {
+    let multiples = []
+    for(let i = 1; i * divisor <= bound; i++) {
+        multiples.push(i * divisor)
+    }
+    console.log(multiples)
+    let maxMultiple = Math.max(...multiples);
+    console.log(maxMultiple)
+}
+
+maxMultiples(12, 100)
 
 codewarsAnswer3.textContent = `- `
 console.log('')
@@ -197,9 +233,15 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Price of Mangoes - Write a function that returns a 2 for 3 deal on mangoes'
+console.log('4. Price of Mangoes - Write a function that returns a 2 for 3 deal on mangoes')
+
+let priceChange = (item, price) => {
+    let discount = Math.floor(item / 3);
+    let total = (item - discount) * price
+    console.log(total)
+}
+priceChange(3, 1)
 
 codewarsAnswer4.textContent = `- `
 console.log('')
@@ -209,9 +251,14 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Casing String - capitalize all the words in a string'
+console.log('5. Casing String - capitalize all the words in a string')
+
+let casting = (string) => {
+    let result = string.split(' ').map(word => word.replace(word[0], word[0].toUpperCase())).join(' ')
+    console.log(result)
+}
+casting('hello world')
 
 codewarsAnswer5.textContent = `- `
 console.log('')
