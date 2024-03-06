@@ -168,36 +168,49 @@ console.log('1. Count by X - write a function with two arguements that will retu
 
 let multiplesOfX = (multiple, X) => {
     let array = []
-    for(let i = 0; i * multiple <= X; i++) {
+    for(let i = 1; i * multiple <= X; i++) {
         array += multiple * i + ' '
     }
     console.log(array)
 }
 multiplesOfX(9, 237)
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `- let multiplesOfX = ${multiplesOfX}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Casting strings - write a function that changes the case of the first letter of each word to upper case'
+console.log('2. Casting strings - write a function that changes the case of the first letter of each word to upper case')
 
-codewarsAnswer2.textContent = `- `
+
+let casing = (string) => {
+    let newString = string.split(' ').map(word => word.replace(word[0], word[0].toUpperCase())).join(' ');
+    console.log(newString)
+}
+   
+casing('hello world')
+
+codewarsAnswer2.textContent = `- let casting = ${casing}`
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Max Multiples - given a divisor and a bound, find the largest integer that is divisible by the divisor, is less than or equal to the bound, and is greater than 0'
+console.log('3. Max Multiples - given a divisor and a bound, find the largest integer that is divisible by the divisor, is less than or equal to the bound, and is greater than 0')
 
-codewarsAnswer3.textContent = `- `
+let maxMultiple = (d, b) => {
+    for(let i = 0; i * d <= b; i++) {
+        let total = Math.floor(b / d) * d;
+        console.log(total)
+    }
+}
+maxMultiple(9, 100)
+codewarsAnswer3.textContent = `- let maxMultiple = ${maxMultiple}`
 console.log('')
 
 
@@ -205,11 +218,16 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Remove Duplicates From a List - write a function that rempves duplicates from  a array'
+console.log('4. Remove Duplicates From a List - write a function that rempves duplicates from  a array')
 
-codewarsAnswer4.textContent = `- `
+let removeDuplicates = (list) => {
+    let removedDuplicates = new Set([...list])
+    console.log(removedDuplicates)
+}
+
+removeDuplicates([1, 2, 1, 3, 1, 4, 1, 5])
+codewarsAnswer4.textContent = `- let removedDuplicates = ${removeDuplicates}`
 console.log('')
 
 
@@ -217,9 +235,24 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Do ... While loop - write a function that accepts a string and a number.  Add an asterisk to the side pf the string based on the even or odd value: to the left if its odd, and the right if its even'
+console.log('5. Do ... While loop - write a function that accepts a string and a number.  Add an asterisk to the side pf the string based on the even or odd value: to the left if its odd, and the right if its even')
+
+let asterisk = (string, num) => {
+    do {
+        if(num % 2 === 0) {
+            string = `${string} *`
+        }
+        else {
+            string = `* ${string}`
+        }
+        num--
+    }
+    while(num > 0)
+
+    console.log(string)
+}
+asterisk('hello', 5)
 
 codewarsAnswer5.textContent = `- `
 console.log('')
