@@ -254,7 +254,7 @@ let asterisk = (string, num) => {
 }
 asterisk('hello', 5)
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = `- let asterisk = ${asterisk}`
 console.log('')
 
 
