@@ -163,33 +163,69 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Filter the number - write a function that filters numbers out of a string'
+console.log('1. Filter the number - write a function that filters numbers out of a string')
 
-codewarsAnswer1.textContent = `- `
+let filterNum = (string) => {
+    let filtered = string.split('').filter(character => {
+        return '1234567890'.includes(character)
+    });
+    console.log(filtered)
+}
+filterNum('h3110')
+
+
+
+codewarsAnswer1.textContent = `- let filterNum = ${filterNum}`
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Basic Data Type: Numbers - write a function that shows all five math operations in JavaSCript'
+console.log('2. Basic Data Type: Numbers - write a function that shows all five math operations in JavaSCript')
 
-codewarsAnswer2.textContent = `- `
+let operators = (a, b) => {
+    let add = a + b;
+    let sub = a - b;
+    let div = a / b;
+    let multi = a * b;
+    let mod = a % b;
+
+    console.log(add)
+    console.log(sub)
+    console.log(div)
+    console.log(multi)
+    console.log(mod)
+}
+operators(100, 9)
+
+codewarsAnswer2.textContent = `- let opersators = ${operators}`
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. do... while loop - write a function that accepts a string and a number.  Add asterisks to the string based on the even/odd nature of the number - odd adds to the left - even adds to the right'
+console.log('3. do... while loop - write a function that accepts a string and a number.  Add asterisks to the string based on the even/odd nature of the number - odd adds to the left - even adds to the right')
 
-codewarsAnswer3.textContent = `- `
+let asterisk = (string, num) => {
+    do {
+        if(num % 2 === 0) {
+            string = `${string} *`
+        }
+        else {
+            string = `* ${string}`
+        }
+        num--
+    }
+    while(num > 0)
+    console.log(string)
+}
+asterisk('string', 5)
+codewarsAnswer3.textContent = `- let asterisk = ${asterisk}`
 console.log('')
 
 
@@ -197,11 +233,16 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Remove duplicates from a list - write a function that removes the duplicates from an array'
+console.log('4. Remove duplicates from a list - write a function that removes the duplicates from an array')
 
-codewarsAnswer4.textContent = `- `
+let removeDuplicates = (arr) => {
+    let newArr = new Set([...arr]);
+    console.log(newArr)
+}
+removeDuplicates([1, 2, 1, 3, 1, 4, 1, 5])
+
+codewarsAnswer4.textContent = `- let removeDuplicates = ${removeDuplicates}`
 console.log('')
 
 
@@ -209,9 +250,15 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Max Multiples - Given a bound a d a divisor, find the largest number that id dividible by the divisor, less than the bound and greater than 0'
+console.log('5. Max Multiples - Given a bound a d a divisor, find the largest number that id dividible by the divisor, less than the bound and greater than 0')
+
+let maxMultple = (bound, divisor) => {
+    let n = Math.floor(bound / divisor) * divisor;
+    console.log(n)
+    
+}
+maxMultple(100, 9)
 
 codewarsAnswer5.textContent = `- `
 console.log('')
