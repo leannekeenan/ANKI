@@ -78,9 +78,9 @@ console.log('')
 //3.
 reviewQuestion3.textContent = '3. Abstraction'
 console.log('3. Abstraction')
-console.log('A principle of teh OOP development process that allows objects to hide and show content at its discression and needs of the user. Tihs can be done my including or excluding variables from function code blocks, allowing them to be accessed by specific segment sof the progeam rather tha the entire program')
+console.log('A principle of the OOP development process that allows objects to hide and show content at its discression and needs of the user. Tihs can be done my including or excluding variables from function code blocks, allowing them to be accessed by specific segment sof the progeam rather tha the entire program')
 
-reviewAnswer3.textContent = `- A principle of teh OOP development process that allows objects to hide and show content at its discression and needs of the user. Tihs can be done my including or excluding variables from function code blocks, allowing them to be accessed by specific segment sof the progeam rather tha the entire program`
+reviewAnswer3.textContent = `- A principle of the OOP development process that allows objects to hide and show content at its discression and needs of the user. Tihs can be done my including or excluding variables from function code blocks, allowing them to be accessed by specific segment sof the progeam rather tha the entire program`
 console.log('')
 
 
