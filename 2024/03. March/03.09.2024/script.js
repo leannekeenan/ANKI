@@ -211,55 +211,112 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. do ... while loop: write a function that accepts two parameters, string and number. Use a do ... while to add astrisks to the right side of the string if the number is even, and to the left if the number is odd (meaning that the string has a total number of astrisks appended to it. When the number is odd, there will always be one more on the left than on the right'
+console.log('1. do ... while loop: write a function that accepts two parameters, string and number. Use a do ... while to add astrisks to the right side of the string if the number is even, and to the left if the number is odd (meaning that the string has a total number of astrisks appended to it. When the number is odd, there will always be one more on the left than on the right')
 
-codewarsAnswer1.textContent = `- `
-console.log('')
 
+let doWhile = (string, num) => {
+    do {
+        if(num % 2 === 0) {
+            string = `${string} *`
+        }
+        else {
+            string = `* ${string}`
+        }
+        num-- //delimiter
+    }
+    
+    while(num > 0)
+    console.log(string)
+}
+
+codewarsAnswer1.textContent = `let doWhile = ${doWhile}`
+console.log(`let doWhile = ${doWhile}`)
+console.log('result: ')
+console.log('doWhile("hello", 2)' )
+doWhile('hello', 2) 
+console.log('doWhile("hello", 3)' )
+doWhile('hello', 3)
+console.log('doWhile("hello", 5)' )
+doWhile('hello', 5)
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Return Min and Max of a list -  make two functions, max and min, that receive a list of integers as input, and return the largest and lowest number in that list, respectively.'
+console.log('2. Return Min and Max of a list -  make two functions, max and min, that receive a list of integers as input, and return the largest and lowest number in that list, respectively.')
 
-codewarsAnswer2.textContent = `- `
-console.log('')
+let findMinandMax = (list) => {
+    console.log(list)
+    let max = 
+        Math.max(...list);
 
+    let min = 
+       Math.min(...list);
 
+    let extremes = `Min: ${min} : Max: ${max}`
+    console.log(extremes)
+}
+
+codewarsAnswer2.textContent = `let findMinandMax = ${findMinandMax}`
+console.log(`let findMinandMax = ${findMinandMax}`)
+
+findMinandMax([1, 2, 3, 4, 5, 6])
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Reverse Sequence - Build a function that returns an array of integers from n to 1 where n > 0.'
+console.log('3. Reverse Sequence - Build a function that returns an array of integers from n to 1 where n > 0.')
 
-codewarsAnswer3.textContent = `- `
-console.log('')
+let reverseSequence = (n) => {
+    let newSequence = []
+    for(let i = 0; i < n; i++) {
+        newSequence.push(i); 
+    }
+    console.log(newSequence.reverse())
+}
+reverseSequence(3)
+
+codewarsAnswer3.textContent = `let reverseSequence = ${reverseSequence}`
+console.log(`let reverseSequence = ${reverseSequence}`)
 
 
 
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Will the hero survive? - A hero is on his way to the castle to complete his mission. However, he\'s been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he\'s gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive? Return true if yes, false otherwise'
 
-codewarsAnswer4.textContent = `- `
-console.log('')
+console.log('4. Will the hero survive? - A hero is on his way to the castle to complete his mission. However, he\'s been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he\'s gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive? Return true if yes, false otherwise')
+
+let hero = (dragons, ammo) => {
+    if(ammo / 2 >= dragons) {
+        console.log(true)
+    }
+    else {
+        console.log(false)
+    }
+}
+
+
+codewarsAnswer4.textContent = `let hero = ${hero}`
+console.log(`let hero = ${hero}`)
+hero(2, 8)
 
 
 
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. Filter the number - There are numbers in your text.  Retrieve the numbers and return them in a new object in the same order'
+console.log('5. Filter the number - There are numbers in your text.  Retrieve the numbers and return them in a new object in the same order')
+
+let filterForNumbers = (string) => {
+    let filtered = string.split('').map(character => {
+       console.log(character.match(/[0-9]/g))
+    })
+}
+filterForNumbers('h3110')
 
 codewarsAnswer5.textContent = `- `
 console.log('')
