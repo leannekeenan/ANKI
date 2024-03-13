@@ -430,9 +430,32 @@ console.log('')
 //4.
 codewarsQuestion4.textContent = '4. Youre a square - write a function that determines if a provided value is or sis not a square root value'
 console.log('4. Youre a square - write a function that determines if a provided value is or sis not a square root value')
-console.log(``)
+console.log(`
+let square = (num) => {
+    let square = Math.sqrt(num)
+    if(square % 1 === 0) {
+        console.log(square)
+        console.log(true)
+    }
+    else {
+        console.log(false)
+    }
+}
+square(25)
+`)
 
-codewarsAnswer4.textContent = `- `
+codewarsAnswer4.textContent = `
+let square = (num) => {
+    let square = Math.sqrt(num)
+    if(square % 1 === 0) {
+        console.log(square)
+        console.log(true)
+    }
+    else {
+        console.log(false)
+    }
+}
+square(25)`
 
 let square = (num) => {
     let square = Math.sqrt(num)
@@ -454,9 +477,29 @@ console.log('')
 //5.
 codewarsQuestion5.textContent = '5. filter numbers out of a string'
 console.log('5. filter numbers out of a string')
-console.log(``)
+console.log(`
+let filter = (string) => {
+    let filtered = string.split('').filter(char => {
+        if( char.match(/[0-9]/)) {
+            return char
+        }
+    })
+    console.log(filtered)
+}
+filter('h3110')
+`)
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = `
+let filter = (string) => {
+    let filtered = string.split('').filter(char => {
+        if( char.match(/[0-9]/)) {
+            return char
+        }
+    })
+    console.log(filtered)
+}
+filter('h3110')
+`
 
 let filter = (string) => {
     let filtered = string.split('').filter(char => {
