@@ -294,33 +294,133 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = `1. There's a "3 for 2" (or "2+1" if you like) offer on mangoes. For a given quantity and price (per mango), calculate the total cost of the mangoes.`
+console.log(`1. There's a "3 for 2" (or "2+1" if you like) offer on mangoes. For a given quantity and price (per mango), calculate the total cost of the mangoes.`)
+console.log(`
+let sale = (price, count) => {
+    let discount = Math.floor(count / 3);;
+    let total = (count - discount) * price;
+    console.log(total)
+}
+sale(1, 3)
+`)
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `
+let sale = (price, count) => {
+    let discount = Math.floor(count / 3);;
+    let total = (count - discount) * price;
+    console.log(total)
+}
+sale(1, 3)
+`
+
+let sale = (price, count) => {
+    let discount = Math.floor(count / 3);;
+    let total = (count - discount) * price;
+    console.log(total)
+}
+sale(1, 3)
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Max Multiple - Given a divisor and a bounr, return the largest value that is divisible by the divisor , less than the bound, and greater than 0'
+console.log('2. Max Multiple - Given a divisor and a bounr, return the largest value that is divisible by the divisor , less than the bound, and greater than 0')
+console.log(`
+let maxMultiples = (divisor, bound) => {
+    let max = []
+    for(let i = 0; i * divisor <= bound; i++) {
+        let values = divisor * i
+        max.push(values)
+    }
+    console.log(max[max.length - 1])
+}
+maxMultiples(9, 100)
+`)
 
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `
+let maxMultiples = (divisor, bound) => {
+    let max = []
+    for(let i = 0; i * divisor <= bound; i++) {
+        let values = divisor * i
+        max.push(values)
+    }
+    console.log(max[max.length - 1])
+}
+maxMultiples(9, 100)
+`
+
+let maxMultiples = (divisor, bound) => {
+    let max = []
+    for(let i = 0; i * divisor <= bound; i++) {
+        let values = divisor * i
+        max.push(values)
+    }
+    console.log(max[max.length - 1])
+}
+maxMultiples(9, 100)
+
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Points Per Game - Wtite two constructor functions: one called NBA that accepts player name, team, and point total.  The second will accept two NBA objects and return the sum of both players score as a total'
+console.log('3. Points Per Game - Wtite two constructor functions: one called NBA that accepts player name, team, and point total.  The second will accept two NBA objects and return the sum of both players score as a total')
+console.log(`
+function NBA (playerName, playerTeam, playerScore) {
+    this.name = playerName,
+    this.team = playerTeam,
+    this.score = playerScore
 
-codewarsAnswer3.textContent = `- `
+    console.log(this.name, this.team, this.score)
+}
+let fred = new NBA('fred', 'bulls', 100)
+let thom = new NBA('Thom', 'pistons', 200)
+
+function TotalScore(p1, p2) {
+    let score = fred.score + thom.score
+    console.log(score)
+}
+TotalScore()
+`)
+
+codewarsAnswer3.textContent = `
+function NBA (playerName, playerTeam, playerScore) {
+    this.name = playerName,
+    this.team = playerTeam,
+    this.score = playerScore
+
+    console.log(this.name, this.team, this.score)
+}
+let fred = new NBA('fred', 'bulls', 100)
+let thom = new NBA('Thom', 'pistons', 200)
+
+function TotalScore(p1, p2) {
+    let score = fred.score + thom.score
+    console.log(score)
+}
+TotalScore()
+`
+function NBA (playerName, playerTeam, playerScore) {
+    this.name = playerName,
+    this.team = playerTeam,
+    this.score = playerScore
+
+    console.log(this.name, this.team, this.score)
+}
+let fred = new NBA('fred', 'bulls', 100)
+let thom = new NBA('Thom', 'pistons', 200)
+
+function TotalScore(p1, p2) {
+    let score = fred.score + thom.score
+    console.log(score)
+}
+TotalScore()
+
 console.log('')
 
 
@@ -328,11 +428,23 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. Youre a square - write a function that determines if a provided value is or sis not a square root value'
+console.log('4. Youre a square - write a function that determines if a provided value is or sis not a square root value')
+console.log(``)
 
 codewarsAnswer4.textContent = `- `
+
+let square = (num) => {
+    let square = Math.sqrt(num)
+    if(square % 1 === 0) {
+        console.log(square)
+        console.log(true)
+    }
+    else {
+        console.log(false)
+    }
+}
+square(25)
 console.log('')
 
 
@@ -340,11 +452,22 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+codewarsQuestion5.textContent = '5. filter numbers out of a string'
+console.log('5. filter numbers out of a string')
+console.log(``)
 
 codewarsAnswer5.textContent = `- `
+
+let filter = (string) => {
+    let filtered = string.split('').filter(char => {
+        if( char.match(/[0-9]/)) {
+            return char
+        }
+    })
+    console.log(filtered)
+}
+filter('h3110')
+
 console.log('')
 
 
