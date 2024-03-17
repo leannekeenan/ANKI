@@ -4,3 +4,10 @@
     margin: 1rem auto;
     background: green;
 }
+
+img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}

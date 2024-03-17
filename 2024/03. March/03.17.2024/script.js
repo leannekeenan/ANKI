@@ -42,7 +42,7 @@ reviewQuestion2.textContent = '2. how to measure image compression'
 console.log('2. how to measure image compression')
 console.log('(imageSize - compression) / imagerate * 100%')
 
-reviewAnswer2.textContent = `- `
+reviewAnswer2.textContent = `- (imageSize - compression) / imagerate * 100%`
 console.log('')
 
 
@@ -189,33 +189,168 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. remove zeros - write a function that removes zeros from the end of a number'
+console.log('1. remove zeros - write a function that removes zeros from the end of a number')
+console.log(`
+let removesZeros = (num) => {
+    while(num % 10 === 0 && num !== 0) {
+        num /= 10
+    }
+    console.log(num)
+}
+removesZeros(1000)
+`)
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `
+let removesZeros = (num) => {
+    while(num % 10 === 0 && num !== 0) {
+        num /= 10
+    }
+    console.log(num)
+}
+removesZeros(1000)
+`
+
+let removesZeros = (num) => {
+    while(num % 10 === 0 && num !== 0) {
+        num /= 10
+    }
+    console.log(num)
+}
+removesZeros(1000)
+
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. rock paper scissors - write  ROCK PAPER SCISSOR game the returns a winner'
+console.log('2. rock paper scissors - write  ROCK PAPER SCISSOR game the returns a winner')
+console.log(`
+let RPS = (playerChoice) => {
+    let botChoice;
+    console.log("player choice: " + playerChoice)
+    let botPlay = () => {
+        
+        let botRamdomizer = Math.random(1)
+        if(botRamdomizer <= .33) {
+            botChoice = 'rock'
+        }
+        else if(botRamdomizer <= .66) {
+            botChoice = 'paper'
+        }
+        else {
+            botChoice = 'scissor'
+        }
 
-codewarsAnswer2.textContent = `- `
+        console.log("bot choice: " + botChoice)
+    }
+    botPlay()
+    let winner;
+    if(playerChoice === botChoice) {
+        winner = 'DRAW'
+    }
+    else if(playerChoice === 'rock' && botChoice === 'scissor' ||
+    playerChoice === 'scissor' && botChoice === 'paper' ||
+    playerChoice === 'paper' && botChoice === 'rock') {
+        winner = 'Player'
+    }
+    else {
+        winner = 'Bot'
+    }
+    console.log("Winner: " + winner)
+}
+RPS('rock')
+`)
+
+codewarsAnswer2.textContent = `
+let RPS = (playerChoice) => {
+    let botChoice;
+    console.log("player choice: " + playerChoice)
+    let botPlay = () => {
+        
+        let botRamdomizer = Math.random(1)
+        if(botRamdomizer <= .33) {
+            botChoice = 'rock'
+        }
+        else if(botRamdomizer <= .66) {
+            botChoice = 'paper'
+        }
+        else {
+            botChoice = 'scissor'
+        }
+
+        console.log("bot choice: " + botChoice)
+    }
+    botPlay()
+    let winner;
+    if(playerChoice === botChoice) {
+        winner = 'DRAW'
+    }
+    else if(playerChoice === 'rock' && botChoice === 'scissor' ||
+    playerChoice === 'scissor' && botChoice === 'paper' ||
+    playerChoice === 'paper' && botChoice === 'rock') {
+        winner = 'Player'
+    }
+    else {
+        winner = 'Bot'
+    }
+    console.log("Winner: " + winner)
+}
+RPS('rock')
+`
+
+let RPS = (playerChoice) => {
+    let botChoice;
+    console.log("player choice: " + playerChoice)
+    let botPlay = () => {
+        
+        let botRamdomizer = Math.random(1)
+        if(botRamdomizer <= .33) {
+            botChoice = 'rock'
+        }
+        else if(botRamdomizer <= .66) {
+            botChoice = 'paper'
+        }
+        else {
+            botChoice = 'scissor'
+        }
+
+        console.log("bot choice: " + botChoice)
+    }
+    botPlay()
+    let winner;
+    if(playerChoice === botChoice) {
+        winner = 'DRAW'
+    }
+    else if(playerChoice === 'rock' && botChoice === 'scissor' ||
+    playerChoice === 'scissor' && botChoice === 'paper' ||
+    playerChoice === 'paper' && botChoice === 'rock') {
+        winner = 'Player'
+    }
+    else {
+        winner = 'Bot'
+    }
+    console.log("Winner: " + winner)
+}
+RPS('rock')
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
+codewarsQuestion3.textContent = '3. Add Length:  calculate the length of each word in a string and append their lengths'
+console.log('3. Add Length:  calculate the length of each word in a string and append their lengths')
 console.log('')
 
-codewarsAnswer3.textContent = `- `
+codewarsAnswer3.textContent = `
+
+`
+
+
+
 console.log('')
 
 
@@ -223,11 +358,46 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. ATM - write a function that determins the minimum number of bank notes to honor a withdrawl'
+console.log('4. ATM - write a function that determins the minimum number of bank notes to honor a withdrawl')
+console.log(`
+let atm = (withdrawl) => {
+    let total = 0;
+    let notes = [100, 50, 20, 10, 5, 1];
+    for(let i = 0; i < notes.length; i++) { 
+        total += Math.floor(withdrawl / notes[i]);
+        withdrawl %= notes[i]
+    }
+   console.log(total)
+}
+atm(101)
 
-codewarsAnswer4.textContent = `- `
+`)
+
+codewarsAnswer4.textContent = `
+let atm = (withdrawl) => {
+    let total = 0;
+    let notes = [100, 50, 20, 10, 5, 1];
+    for(let i = 0; i < notes.length; i++) { 
+        total += Math.floor(withdrawl / notes[i]);
+        withdrawl %= notes[i]
+    }
+   console.log(total)
+}
+atm(101)
+`
+
+let atm = (withdrawl) => {
+    let total = 0;
+    let notes = [100, 50, 20, 10, 5, 1];
+    for(let i = 0; i < notes.length; i++) { 
+        total += Math.floor(withdrawl / notes[i]);
+        withdrawl %= notes[i]
+    }
+   console.log(total)
+}
+atm(101)
+
 console.log('')
 
 
@@ -235,14 +405,42 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
+codewarsQuestion5.textContent = '5. Feast of Many Beast - Write a function feast that takes the animal\'s name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast.'
+console.log('5. Feast of Many Beast - Write a function feast that takes the animal\'s name and dish as arguments and returns true or false to indicate whether the beast is allowed to bring the dish to the feast.')
 console.log('')
 
-codewarsAnswer5.textContent = `- `
-console.log('')
+codewarsAnswer5.textContent = `
+let feast = (animal, dish) => {
+    if(animal[0] === dish[0] && animal[animal.length - 1] === dish[dish.length - 1]) {
+        console.log(true)
+    }  
+    else {
+        console.log(false)
+    }  
+}
+feast('centepede', 'cake')
+`
+console.log(`
+let feast = (animal, dish) => {
+    if(animal[0] === dish[0] && animal[animal.length - 1] === dish[dish.length - 1]) {
+        console.log(true)
+    }  
+    else {
+        console.log(false)
+    }  
+}
+feast('centepede', 'cake')
+`)
 
-
+let feast = (animal, dish) => {
+    if(animal[0] === dish[0] && animal[animal.length - 1] === dish[dish.length - 1]) {
+        console.log(true)
+    }  
+    else {
+        console.log(false)
+    }  
+}
+feast('centepede', 'cake')
 
 // codewarsQuestion6.textContent = '6.'
 // codewarsAnswer6.textContent = `- `
