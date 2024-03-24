@@ -163,33 +163,148 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. Filter the Numbers Out of the String - filter the numbers out of a string and return them to a new array. return the array with the number in their orignal order'
+console.log('1. Filter the Numbers Out of the String - filter the numbers out of a string and return them to a new array. return the array with the number in their orignal order')
+console.log(`
+let filterNumOutOfStr = (string) => {
+    let arr = []
+    string.split('').filter(character => {
+        if(character.match(/[0-9]/g)) {
+            arr.push(character)
+        }
+    })
+    console.log(arr)
+}
+filterNumOutOfStr('h3110')
+`)
 
-codewarsAnswer1.textContent = `- `
+codewarsAnswer1.textContent = `
+let filterNumOutOfStr = (string) => {
+    let arr = []
+    string.split('').filter(character => {
+        if(character.match(/[0-9]/g)) {
+            arr.push(character)
+        }
+    })
+    console.log(arr)
+}
+filterNumOutOfStr('h3110')
+`
+
+let filterNumOutOfStr = (string) => {
+    let arr = []
+    string.split('').filter(character => {
+        if(character.match(/[0-9]/g)) {
+            arr.push(character)
+        }
+    })
+    console.log(arr.join(''))
+}
+filterNumOutOfStr('h3110')
+
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Youre a square - write a function that determins if an integer is a square root '
+console.log('2. Youre a square - write a function that determins if an integer is a square root ')
+console.log(`
+let square = (num) => {
+    let sqrt = Math.sqrt(num);
+    if(sqrt % 1 === 0) {
+        console.log(sqrt)
+    }
+    else {
+        console.log('NS')
+    }
+}
+square(25) //5
+square(9) // 3
+square(3) // NS
+`)
 
 codewarsAnswer2.textContent = `- `
+
+let square = (num) => {
+    let sqrt = Math.sqrt(num);
+    if(sqrt % 1 === 0) {
+        console.log(sqrt)
+    }
+    else {
+        console.log('NS')
+    }
+}
+square(25)
+square(9)
+square(3)
+
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. ATM - write a function that determines the minimum number of bank notes needed to honor a withdrawl greater than 1 and less than 1500'
+console.log('3. ATM - write a function that determines the minimum number of bank notes needed to honor a withdrawl greater than 1 and less than 1500')
+console.log(`
+let ATM = (withdrawl) => {
+    let honoredTotal = 0;
+    let banknotes = [100, 50, 20, 10, 5, 1];
 
-codewarsAnswer3.textContent = `- `
+    if(withdrawl < 1 || withdrawl > 1500) {
+        console.log('appologies, we can not honor an ammount less than 1 dollar or greater that $1500.  Please enter a new ammount to try again')
+    }
+
+    for(let i = 0; i < banknotes.length; i++) {
+        honoredTotal += Math.floor(withdrawl / banknotes[i]);
+        withdrawl %= banknotes[i] 
+    }
+    console.log(honoredTotal)
+}
+
+ATM(17)
+
+`)
+
+codewarsAnswer3.textContent = `
+let ATM = (withdrawl) => {
+    let honoredTotal = 0;
+    let banknotes = [100, 50, 20, 10, 5, 1];
+
+    if(withdrawl < 1 || withdrawl > 1500) {
+        console.log('appologies, we can not honor an ammount less than 1 dollar or greater that $1500.  Please enter a new ammount to try again')
+    }
+
+    for(let i = 0; i < banknotes.length; i++) {
+        honoredTotal += Math.floor(withdrawl / banknotes[i]);
+        withdrawl %= banknotes[i] 
+    }
+    console.log(honoredTotal)
+}
+
+ATM(17)
+
+`
+
+let ATM = (withdrawl) => {
+    let honoredTotal = 0;
+    let banknotes = [100, 50, 20, 10, 5, 1];
+
+    if(withdrawl < 1 || withdrawl > 1500) {
+        console.log('appologies, we can not honor an ammount less than 1 dollar or greater that $1500.  Please enter a new ammount to try again')
+    }
+
+    for(let i = 0; i < banknotes.length; i++) {
+        honoredTotal += Math.floor(withdrawl / banknotes[i]);
+        withdrawl %= banknotes[i] 
+    }
+    console.log(honoredTotal)
+}
+
+ATM(17)
+
 console.log('')
 
 
@@ -197,11 +312,33 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+codewarsQuestion4.textContent = '4. The price of Mangoes - Write a function that gives a 3 for 2 deal on mangoes'
+console.log('4. The price of Mangoes - Write a function that gives a 3 for 2 deal on mangoes')
+console.log(`
+let deal = (price, count) => {
+    let discount = Math.floor(count / 3) * price;
+    let total = (price * count) - discount
+    console.log(total)
+}
+deal(1, 6)
+`)
 
-codewarsAnswer4.textContent = `- `
+codewarsAnswer4.textContent = `
+let deal = (price, count) => {
+    let discount = Math.floor(count / 3) * price;
+    let total = (price * count) - discount
+    console.log(total)
+}
+deal(1, 6)
+`
+
+let deal = (price, count) => {
+    let discount = Math.floor(count / 3) * price;
+    let total = (price * count) - discount
+    console.log(total)
+}
+deal(1, 6)
+
 console.log('')
 
 
@@ -209,11 +346,29 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
+codewarsQuestion5.textContent = '5. Feast of Many Beasts - write a function that checks the fitst and last character of a party attendee and the item they brought.  If the first and last characters match, return true, else false'
+console.log('5. Feast of Many Beasts - write a function that checks the fitst and last character of a party attendee and the item they brought.  If the first and last characters match, return true, else false')
 console.log('')
 
 codewarsAnswer5.textContent = `- `
+
+let feast = (attendee, item) => {
+   for(let a = 0; a < attendee.length; a++) {
+    for(let i = 0; i < item.length; i++) {
+        if(attendee[a][0] === item[i][0] && 
+            attendee[attendee.length - 1] === item[item.length - 1]) {
+            console.log(true)
+            return
+        }
+        else {
+            console.log(false)
+            return
+        }
+    }
+   }
+   
+}
+feast('bat', 'blue hat')
 console.log('')
 
 
