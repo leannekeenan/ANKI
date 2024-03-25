@@ -191,33 +191,74 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
+codewarsQuestion1.textContent = '1. Youre a Square - write a function that checks if a passed value is or is not a square.  Return the square root value, or return "not square" if the value is not a square'
+console.log('1. Youre a Square - write a function that checks if a passed value is or is not a square.  Return the square root value, or return "not square" if the value is not a square')
 console.log('')
 
 codewarsAnswer1.textContent = `- `
+
+let square = (num) => {
+    let sqrt = Math.sqrt(num);
+
+    if(sqrt % 1 === 0) {
+        console.log(true)
+        console.log(sqrt)
+        return
+    }
+
+    else {
+        console.log(false)
+        console.log('not square')
+        return
+    }
+}
+square(25)
+square(8)
+square(9)
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
+codewarsQuestion2.textContent = '2. ATM - write a function that represents an ATM machine that will honor a withdrawl no less than 1 dollar and no more that $1500'
+console.log('2. ATM - write a function that represents an ATM machine that will honor a withdrawl no less than 1 dollar and no more that $1500')
 console.log('')
 
 codewarsAnswer2.textContent = `- `
+
+let ATM = (withdrawl) => {
+    let banknotes = [100, 50, 20, 10, 5, 1];
+    let count = 0;
+
+    for(let i = 0; i < banknotes.length; i++) {
+        count += Math.floor(withdrawl % banknotes[i])
+        withdrawl /= banknotes[i]
+    }
+    console.log(count)
+
+}
+ATM(102)
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
+codewarsQuestion3.textContent = '3. Remove Zeros - write a function that removes the zeros from the end of a value'
+console.log('3. Remove Zeros - write a function that removes the zeros from the end of a value')
 console.log('')
 
 codewarsAnswer3.textContent = `- `
+
+let removeZeros = (num) => {
+    while(num % 10 === 0) {
+        num /= 10
+    }
+    console.log(num)
+}
+removeZeros(100)
+
 console.log('')
 
 
@@ -225,11 +266,32 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
+codewarsQuestion4.textContent = '4. Basic Data Types: Strings - Write a parable and fill in the blanks.'
+console.log('4. Basic Data Types: Strings - Write a parable and fill in the blanks.')
 console.log('')
 
 codewarsAnswer4.textContent = `- `
+
+let parable = (a, b, c) => {
+    console.log('John\'s iron axe fell into the river. He cried sadly by the river. Then a monster came out of the water, with a golden axe in his hand. He asked John: is this golden axe yours?')
+
+    if(a === false || a === 'no' || a === 'No') {
+        console.log('John replied that it was not his axe. The monster took out a silver axe.He asked John: is this silver axe yours?')
+
+        if(b === false || b === 'no' || b === 'No') {
+            console.log('John replied that it was not his axe. The monster took out a iron axe. He asked John: is this iron axe yours?')
+
+            if(c === true || c === 'yes' || c === 'Yes') {
+                console.log('John said happily: This is my iron axe!!!')
+                console.log('The monster smiled and said to John, "you are an honest boy! - I will now grant you one wish."')
+            }
+        }
+
+    }
+   
+}
+parable(false, false, true)
+
 console.log('')
 
 
@@ -237,11 +299,21 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
+codewarsQuestion5.textContent = '5. Add Length - write a function that accepta a string and returns each word in an array with the length of the word appended to it'
+console.log('5. Add Length - write a function that accepta a string and returns each word in an array with the length of the word appended to it')
 console.log('')
 
 codewarsAnswer5.textContent = `- `
+
+let addLength = (string) => {
+    string.split(' ').map(word => {
+        word += word.length
+        console.log(word)
+    })
+    
+}
+addLength('hello world')
+
 console.log('')
 
 
