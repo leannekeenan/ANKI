@@ -1,5 +1,5 @@
 /*ANKI Review: */
-console.log('ANKI Review:')
+console.log('ANKI Review: CSS Definition & Syntax Review')
 let reviewQuestion1 = document.getElementById('rq1')
 let reviewQuestion2 = document.getElementById('rq2')
 let reviewQuestion3 = document.getElementById('rq3')
@@ -27,22 +27,50 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 //1.
-reviewQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+reviewQuestion1.textContent = '1. Table Structure'
+console.log('1. Table Structure')
+console.log(`
+<table>
+    <thead>
+        <th colspan="">
+            
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
-reviewAnswer1.textContent = `- `
+`)
+
+reviewAnswer1.textContent = `
+<table>
+    <thead>
+        <th colspan="">
+            
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+`
 console.log('')
 
 
 
 
 //2.
-reviewQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+reviewQuestion2.textContent = '2. Prefix MAtch Attribute Selector'
+console.log('2. Prefix Match Attribute Selector')
+console.log('for example, if an HTML class had the name "test-container", the Prefix match can find it and any other DOM element starting with "test" by using this style of context: div[class^="test"]')
 
-reviewAnswer2.textContent = `- `
+reviewAnswer2.textContent = `for example, if an HTML class had the name "test-container", the Prefix match can find it and any other DOM element starting with "test" by using this style of context: div[class^="test"]`
 console.log('')
 
 
@@ -50,42 +78,42 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+reviewQuestion3.textContent = '3. text-decoration property'
+console.log('3. text-decoration property')
+console.log('CSS property used to add or remove decor from text like underline features')
 
-reviewAnswer3.textContent = `- `
+reviewAnswer3.textContent = `CSS property used to add or remove decor from text like underline features`
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. contents'
+console.log('4. contents')
+console.log('CSS property used to replace a page element with a generated value')
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = `CSS property used to replace a page element with a generated value`
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. contents'
+console.log('5. contents')
+console.log('A CSS property used to insert gennerated values into HTML elements')
 
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = `A CSS property used to insert gennerated values into HTML elements`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
+reviewQuestion6.textContent = '6. block-flow'
+console.log('6. block-flow')
 console.log('')
 
 reviewAnswer6.textContent = `- `
@@ -95,44 +123,44 @@ console.log('')
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. Image Sprites'
+console.log('7. Image Sprites')
+console.log('a technique used in web development to combine multiple images into a single image file. This single image is then used to display different parts of the images at different times through CSS background positioning')
 
-reviewAnswer7.textContent = `- `
+reviewAnswer7.textContent = `a technique used in web development to combine multiple images into a single image file. This single image is then used to display different parts of the images at different times through CSS background positioning`
 console.log('')
 
 
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. keyword "cover"'
+console.log('8. keyword "cover"')
+console.log('keyword used in background sizing and positioning to allow the background image to cover the size of the viewing devce screen')
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `keyword used in background sizing and positioning to allow the background image to cover the size of the viewing devce screen`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. What technique can be used to contain float overflow content'
+console.log('9. What technique can be used to contain float overflow content')
+console.log('1. set overflow to hidden, 2, place object inside of a parent element and position the float element at relative to the parents size')
 
-reviewAnswer9.textContent = `- `
+reviewAnswer9.textContent = `- 1. set overflow to hidden, 2, place object inside of a parent element and position the float element at relative to the parents size`
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. <q>'
+console.log('10. <q>')
+console.log('inline quotation in HTML')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = `- inline quotation in HTML`
 console.log('')
 
 
