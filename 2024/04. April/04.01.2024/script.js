@@ -27,22 +27,52 @@ let reviewAnswer10 = document.getElementById('ra10')
 
 
 //1.
-reviewQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+reviewQuestion1.textContent = '1. variable++'
+console.log('1. variable++')
+console.log('stands for post iteration - meaning that the iteration variable increases by one once it is iterated over')
 
-reviewAnswer1.textContent = `- `
+reviewAnswer1.textContent = `- stands for post iteration - meaning that the iteration variable increases by one once it is iterated over`
 console.log('')
 
 
 
 
 //2.
-reviewQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+reviewQuestion2.textContent = '2. fetch function syntax'
+console.log('2. fetch function syntax')
+console.log(`
+let docObj = document.querySelector('click', getFetch)l
 
-reviewAnswer2.textContent = `- `
+fetch(url).then(res => {
+    if(!res.ok) {
+        throw new Error('this is an error')
+    }
+    else {
+        return res.json()
+    }
+}).then(data => {
+
+}).catch(error => {
+    console.log("Error", error.message)
+})
+`)
+
+reviewAnswer2.textContent = `
+let docObj = document.querySelector('click', getFetch)l
+
+fetch(url).then(res => {
+    if(!res.ok) {
+        throw new Error('this is an error')
+    }
+    else {
+        return res.json()
+    }
+}).then(data => {
+
+}).catch(error => {
+    console.log("Error", error.message)
+})
+`
 console.log('')
 
 
@@ -50,89 +80,144 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+reviewQuestion3.textContent = '3. document.body'
+console.log('3. document.body')
+console.log('JavaScript method used to access content in the body of a document of the body directly')
 
-reviewAnswer3.textContent = `- `
+reviewAnswer3.textContent = `- JavaScript method used to access content in the body of a document of the body directly`
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. Polymorphism'
+console.log('4. Polymorphism')
+console.log('A concept in OOP refering to the multiple ways an ojbect can invoke a method, allowing objects of a shared superclass to have shared methods')
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = `- A concept in OOP refering to the multiple ways an ojbect can invoke a method, allowing objects of a shared superclass to have shared methods`
+
+class Animal {
+    makeSound() {
+        console.log('animals make sounds')
+    }
+}
+    class Dog extends Animal {
+        makeSound(){
+            console.log('bark')
+        }
+    }
+
+    class Cat extends Animal {
+        makeSound(){
+            console.log('meow')
+        }
+    }
+    class Bird extends Animal {
+        makeSound(){
+            console.log('chirp')
+        }
+    }
+const animal = new Animal();
+const dog = new Dog();
+let cat = new Cat();
+let bird = new Bird();
+
+animal.makeSound()
+dog.makeSound()
+cat.makeSound()
+bird.makeSound()
+
+
+
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. Syntax for a spread operator in a function call'
+console.log('5. Syntax for a spread operator in a function call')
+console.log(`
+let functionCall = (a, b, c) => {
+    return a + b + c
+}
+let num = [1, 2, 3];
+let total = functionCall(...num);
+console.log(total)
+`)
 
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = `
+let functionCall = (a, b, c) => {
+    return a + b + c
+}
+let num = [1, 2, 3];
+let total = functionCall(...num);
+console.log(total)
+`
+
+let functionCall = (a, b, c) => {
+    return a + b + c
+}
+let num = [1, 2, 3];
+let total = functionCall(...num);
+console.log(total)
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
+reviewQuestion6.textContent = '6. Syntax for "Less Than"'
+console.log('6. Syntax for "Less Than"')
+console.log('<')
 
-reviewAnswer6.textContent = `- `
+reviewAnswer6.textContent = ` <`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. Keyword "extends"'
+console.log('7. Keyword "extends"')
+console.log('Used in OOP to extend properties of a parent class to connected chld nodes, allowing for inheritance and polymprphism')
 
-reviewAnswer7.textContent = `- `
+reviewAnswer7.textContent = `- Used in OOP to extend properties of a parent class to connected chld nodes, allowing for inheritance and polymprphism`
 console.log('')
 
 
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. spread'
+console.log('8. spread')
+console.log('an operator method used to expand elements of an iterable object into key-value pairs to manipulate objects by spreading their new values to function variables')
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `- an operator method used to expand elements of an iterable object into key-value pairs to manipulate objects by spreading their new values to function variables`
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. Abstraction'
+console.log('9. Abstraction')
+console.log('A concept in OOP that provides engineere the option to show or hide data based on the users need for access to it.  It improved security, code cleanliness, and organizational structure to code ')
 
-reviewAnswer9.textContent = `- `
+reviewAnswer9.textContent = `- A concept in OOP that provides engineere the option to show or hide data based on the users need for access to it.  It improved security, code cleanliness, and organizational structure to code `
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. DOM'
+console.log('10. DOM')
+console.log('Document Object Model.  A model of the content of a website that can be used to manipulate the content without modifying the actual code')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = `- Document Object Model.  A model of the content of a website that can be used to manipulate the content without modifying the actual code`
 console.log('')
 
 
