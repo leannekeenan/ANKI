@@ -1,5 +1,5 @@
 /*ANKI Review: */
-console.log('ANKI Review:')
+console.log('ANKI Review: JavaScript Syntax and Definition Review')
 let reviewQuestion1 = document.getElementById('rq1')
 let reviewQuestion2 = document.getElementById('rq2')
 let reviewQuestion3 = document.getElementById('rq3')
