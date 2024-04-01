@@ -345,9 +345,27 @@ console.log('')
 //3.
 codewarsQuestion3.textContent = '3. Remove zeros - write a function that removes the zeros from the end of a number'
 console.log('3. Remove zeros - write a function that removes the zeros from the end of a number')
-console.log('')
+console.log(`
+let removeZeros = (num) => {
+    while(num % 10 === 0 && num > 0) {
+       num /= 10
+    }
+    console.log(num)
+}
 
-codewarsAnswer3.textContent = `- `
+removeZeros(10000)
+`)
+
+codewarsAnswer3.textContent = `
+let removeZeros = (num) => {
+    while(num % 10 === 0 && num > 0) {
+       num /= 10
+    }
+    console.log(num)
+}
+
+removeZeros(10000)
+`
 
 let removeZeros = (num) => {
     while(num % 10 === 0 && num > 0) {
@@ -367,9 +385,23 @@ console.log('')
 //4.
 codewarsQuestion4.textContent = '4. Remove Duplicates from a list - writea function that removes duplicates from an array'
 console.log('4. Remove Duplicates from a list - writea function that removes duplicates from an array')
-console.log('')
+console.log(`
+let removeDuplicates = (array) => {
+    let newArray = new Set([...array])
+    console.log(newArray)
+}
 
-codewarsAnswer4.textContent = `- `
+removeDuplicates([1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5])
+`)
+
+codewarsAnswer4.textContent = `
+let removeDuplicates = (array) => {
+    let newArray = new Set([...array])
+    console.log(newArray)
+}
+
+removeDuplicates([1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5])
+`
 
 let removeDuplicates = (array) => {
     let newArray = new Set([...array])
@@ -387,9 +419,27 @@ console.log('')
 //5.
 codewarsQuestion5.textContent = '5. REverse Sequence - write a function that returns an array of integers from the numerical parameter value to 0'
 console.log('5. REverse Sequence - write a function that returns an array of integers from the numerical parameter value to 0')
-console.log('')
+console.log(`
+let reverseSequence = (num) => {
+    let sequence = []
+    for(let i = 0; i <= num; i++) {
+      sequence.push(i)  
+    }
+    console.log(sequence.reverse())
+}
+reverseSequence(10)
+`)
 
-codewarsAnswer5.textContent = `- `
+codewarsAnswer5.textContent = `
+let reverseSequence = (num) => {
+    let sequence = []
+    for(let i = 0; i <= num; i++) {
+      sequence.push(i)  
+    }
+    console.log(sequence.reverse())
+}
+reverseSequence(10)
+`
 
 let reverseSequence = (num) => {
     let sequence = []
