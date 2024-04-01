@@ -248,33 +248,116 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
+codewarsQuestion1.textContent = '1. Remove the first ans last letter - write a function that removes the first and last characers of a string'
+console.log('1. Remove the first ans last letter - write a function that removes the first and last characers of a string')
+console.log(`
+let modifyString = (string) => {
+    let modified = string.slice(1, -1);
+    console.log(modified)
+}
+modifyString('hello world')
+`)
+
+codewarsAnswer1.textContent = `
+let modifyString = (string) => {
+    let modified = string.slice(1, -1);
+    console.log(modified)
+}
+modifyString('hello world')
+`
+
+let modifyString = (string) => {
+    let modified = string.slice(1, -1);
+    console.log(string)
+    console.log(modified)
+}
+modifyString('hello world')
+
 console.log('')
-
-codewarsAnswer1.textContent = `- `
-console.log('')
-
-
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
-console.log('')
+codewarsQuestion2.textContent = '2. Points per game - write two functions: one constructor function called NBA to hold player names, teams, and points scores.  The second called PPG to sum the total of both players point totals. define two players with the NBA function and add their scores together using PPG.  return the total PPG'
+console.log('2. Points per game - write two functions: one constructor function called NBA to hold player names, teams, and points scores.  The second called PPG to sum the total of both players point totals. define two players with the NBA function and add their scores together using PPG.  return the total PPG')
+console.log(`
+let pointsPerGame = () => {
+    function NBA (player, team, score) {
+        this.player = player,
+        this.team = team,
+        this.score = score
+    }
+    
+    let p1 = new NBA('player1', 'team' , 100);
+    let p2 = new NBA('player2', 'team', 201)
+    
+    function PPG (p1, p2) {
+        console.log(p1.score + p2.score)
+    }
+    
+    PPG(p1, p2)
+}
+pointsPerGame()
+`)
 
-codewarsAnswer2.textContent = `- `
+codewarsAnswer2.textContent = `
+let pointsPerGame = () => {
+    function NBA (player, team, score) {
+        this.player = player,
+        this.team = team,
+        this.score = score
+    }
+    
+    let p1 = new NBA('player1', 'team' , 100);
+    let p2 = new NBA('player2', 'team', 201)
+    
+    function PPG (p1, p2) {
+        console.log(p1.score + p2.score)
+    }
+    
+    PPG(p1, p2)
+}
+pointsPerGame()
+`
+
+let pointsPerGame = () => {
+    function NBA (player, team, score) {
+        this.player = player,
+        this.team = team,
+        this.score = score
+    }
+    
+    let p1 = new NBA('player1', 'team' , 100);
+    let p2 = new NBA('player2', 'team', 201)
+    
+    function PPG (p1, p2) {
+        console.log(p1.score + p2.score)
+    }
+    
+    PPG(p1, p2)
+}
+pointsPerGame()
+
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
+codewarsQuestion3.textContent = '3. Remove zeros - write a function that removes the zeros from the end of a number'
+console.log('3. Remove zeros - write a function that removes the zeros from the end of a number')
 console.log('')
 
 codewarsAnswer3.textContent = `- `
+
+let removeZeros = (num) => {
+    while(num % 10 === 0 && num > 0) {
+       num /= 10
+    }
+    console.log(num)
+}
+
+removeZeros(10000)
+
 console.log('')
 
 
@@ -282,11 +365,19 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
+codewarsQuestion4.textContent = '4. Remove Duplicates from a list - writea function that removes duplicates from an array'
+console.log('4. Remove Duplicates from a list - writea function that removes duplicates from an array')
 console.log('')
 
 codewarsAnswer4.textContent = `- `
+
+let removeDuplicates = (array) => {
+    let newArray = new Set([...array])
+    console.log(newArray)
+}
+
+removeDuplicates([1, 2, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5])
+
 console.log('')
 
 
@@ -294,11 +385,21 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
+codewarsQuestion5.textContent = '5. REverse Sequence - write a function that returns an array of integers from the numerical parameter value to 0'
+console.log('5. REverse Sequence - write a function that returns an array of integers from the numerical parameter value to 0')
 console.log('')
 
 codewarsAnswer5.textContent = `- `
+
+let reverseSequence = (num) => {
+    let sequence = []
+    for(let i = 0; i <= num; i++) {
+      sequence.push(i)  
+    }
+    console.log(sequence.reverse())
+}
+reverseSequence(10)
+
 console.log('')
 
 
