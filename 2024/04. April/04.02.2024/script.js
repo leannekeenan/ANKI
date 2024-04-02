@@ -245,33 +245,90 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
-console.log('')
+codewarsQuestion1.textContent = '1. ATM - write a function that simulates an aTM machine that will honor a withdrawl bwtween 0 and 1500 with the least number of bills possible'
+console.log('1. ATM - write a function that simulates an aTM machine that will honor a withdrawl bwtween 0 and 1500 with the least number of bills possible')
 
-codewarsAnswer1.textContent = `- `
+
+
+console.log(`
+let ATM = withdrawl => {
+    let count = 0;
+    let notes = [100, 50, 20, 10, 5, 1];
+
+    for(let i = 0; i < notes.length; i++) {
+        count += Math.floor(withdrawl / notes[i])
+        withdrawl %= notes[i]     
+    }
+    console.log(count)
+}
+ATM(101)
+`)
+
+codewarsAnswer1.textContent = `
+let ATM = withdrawl => {
+    let count = 0;
+    let notes = [100, 50, 20, 10, 5, 1];
+
+    for(let i = 0; i < notes.length; i++) {
+        count += Math.floor(withdrawl / notes[i])
+        withdrawl %= notes[i]     
+    }
+    console.log(count)
+}
+ATM(101)
+`
+let ATM = withdrawl => {
+    let count = 0;
+    let notes = [100, 50, 20, 10, 5, 1];
+
+    for(let i = 0; i < notes.length; i++) {
+        count += Math.floor(withdrawl / notes[i])
+        withdrawl %= notes[i]     
+    }
+    console.log(count)
+}
+ATM(101)
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
+codewarsQuestion2.textContent = '2. Trim a String - write a function that will trim a string to the provided arguement lelngth'
+console.log('2. Trim a String - write a function that will trim a string to the provided arguement lelngth')
 console.log('')
 
 codewarsAnswer2.textContent = `- `
+
+let trimString = (string, trimLength) => {
+    console.log(string.trim().slice(0, trimLength) + " ...")
+}
+
+trimString('hello world', 5)
+
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
+codewarsQuestion3.textContent = '3. Filter the Number - Write a function that accepts a string.  If there are any numbers within the string, set them in an array and return it'
+console.log('3. Filter the Number - Write a function that accepts a string.  If there are any numbers within the string, set them in an array and return it')
 console.log('')
 
 codewarsAnswer3.textContent = `- `
+
+let filterForNumbers = string => {
+    let numbers = []
+    for(let i = 0; i < string.length; i++) {
+        if(string[i].match(/[0-9]/g)) {
+            numbers.push(string[i])
+        }
+    }
+    console.log(numbers)
+}
+
+filterForNumbers('h3110 w0r1d')
 console.log('')
 
 
@@ -279,11 +336,20 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
+codewarsQuestion4.textContent = '4. Remove Zeros - write a function that removes the 0 from the end of a number'
+console.log('4. Remove Zeros - write a function that removes the 0 from the end of a number')
 console.log('')
 
 codewarsAnswer4.textContent = `- `
+
+let removeZeros = num => {
+    while(num % 10 === 0) {
+        num /= 10   
+    }
+    console.log(num)
+}
+removeZeros(1000)
+
 console.log('')
 
 
@@ -291,11 +357,29 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
+codewarsQuestion5.textContent = '5. Feast of many beasts - there is a party and ther eis one rulr: bring a dish that begins and ends with the same letters as your name. Write a function to do this and return an acceptance or declination of the gusets dish'
+console.log('5. Feast of many beasts - there is a party and ther eis one rulr: bring a dish that begins and ends with the same letters as your name. Write a function to do this and return an acceptance or declination of the gusets dish')
 console.log('')
 
 codewarsAnswer5.textContent = `- `
+
+let feast = (guest, dish) => {
+    for(let i = 0; i < guest.length && i < dish.length; i++) {
+        if(dish[i][0] === guest[i][0] && 
+            dish[dish.length - 1].match(guest[guest.length - 1])) {
+                console.log('welcome');
+                return
+        }
+        else {
+            console.log('bring something else');
+            return
+        }
+    }
+}
+
+feast('porpoise', 'pie')
+feast('porpoise', 'chips')
+
 console.log('')
 
 
