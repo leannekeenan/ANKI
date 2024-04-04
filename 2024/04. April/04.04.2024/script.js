@@ -67,84 +67,109 @@ console.log('3. .fromCharCode()')
 console.log('A string method that can translate the UTF-16 value of a character into a alphanumerical element')
 
 reviewAnswer3.textContent = `- A string method that can translate the UTF-16 value of a character into a alphanumerical element`
+
+let fromCharCodeMethod = String.fromCharCode(65, 112, 112, 108, 101);
+console.log(fromCharCodeMethod)
+
 console.log('')
 
 
 
 
 //4.
-reviewQuestion4.textContent = '4. '
-console.log('4. ')
-console.log('')
+reviewQuestion4.textContent = '4. .fromCodePoint()'
+console.log('4. .fromCodePoint()')
+console.log('String method used to translate UTF-16 values into alphanumeric or special objects')
 
-reviewAnswer4.textContent = `- `
+reviewAnswer4.textContent = `- String method used to translate UTF-16 values into alphanumeric or special objects`
+
+let fromCodePointMethod = String.fromCodePoint(112);
+console.log(fromCodePointMethod)
+
 console.log('')
 
 
 
 
 //5.
-reviewQuestion5.textContent = '5. '
-console.log('5. ')
-console.log('')
+reviewQuestion5.textContent = '5. .toWellFormed()'
+console.log('5. .toWellFormed()')
+console.log('String method used to translate code into emojis')
 
 
-reviewAnswer5.textContent = `- `
+reviewAnswer5.textContent = `- String method used to translate code into emojis`
 console.log('')
 
 
 
 
 //6.
-reviewQuestion6.textContent = '6. '
-console.log('6. ')
-console.log('')
+reviewQuestion6.textContent = '6. .matchAll()'
+console.log('6. .matchAll()')
+console.log('string method used to check for the total number of times a paramerter character is found')
 
-reviewAnswer6.textContent = `- `
+reviewAnswer6.textContent = `- string method used to check for the total number of times a paramerter character is found`
 console.log('')
 
 
 
 
 //7.
-reviewQuestion7.textContent = '7. '
-console.log('7. ')
-console.log('')
+reviewQuestion7.textContent = '7. .padEnd()'
+console.log('7. .padEnd()')
+console.log('method used to add white space or assitional charactes or messages to the end of a string.  When used, to gain the additional space, the length of the orignal string must be accounted for and the desired number of additional spaces must be added to the length value as the pad length to work')
 
-reviewAnswer7.textContent = `- `
+reviewAnswer7.textContent = `- method used to add white space or assitional charactes or messages to the end of a string.  When used, to gain the additional space, the length of the orignal string must be accounted for and the desired number of additional spaces must be added to the length value as the pad length to work`
 console.log('')
 
 
 
 
 //8.
-reviewQuestion8.textContent = '8. '
-console.log('8. ')
-console.log('')
+reviewQuestion8.textContent = '8. .toLocaleUpperCase()'
+console.log('8. .toLocaleUpperCase()')
+console.log('String method used to translate lower case character to a specified nations upper case character')
 
-reviewAnswer8.textContent = `- `
+reviewAnswer8.textContent = `- String method used to translate lower case character to a specified nations upper case character`
+
+const string = "i";
+const englishUpperCase = string.toLocaleUpperCase('en-US');
+const turkishUpperCase = string.toLocaleUpperCase('tr-TR');
+
+console.log("English locale:", englishUpperCase); // Output: "I"
+console.log("Turkish locale:", turkishUpperCase); // Output: "İ"
+
 console.log('')
 
 
 
 
 //9.
-reviewQuestion9.textContent = '9. '
-console.log('9. ')
-console.log('')
+reviewQuestion9.textContent = '9. .search()'
+console.log('9. .search()')
+console.log('String method used to search for a letter, word or phrase within a string, returning the index start of the object being searched for')
 
-reviewAnswer9.textContent = `- `
+reviewAnswer9.textContent = `- String method used to search for a letter, word or phrase within a string, returning the index start of the object being searched for`
+
+let searchMethod = 'why hello';
+let theSearch = searchMethod.search('hello');
+console.log(theSearch)
 console.log('')
 
 
 
 
 //10.
-reviewQuestion10.textContent = '10. '
-console.log('10. ')
-console.log('')
+reviewQuestion10.textContent = '10. .localeCompare()'
+console.log('10. .localeCompare()')
+console.log('String method used to compare two strings in the same locale and returns a number indicating if the reference object comes before or after or is equal to string it is being compared to')
 
-reviewAnswer10.textContent = `- `
+reviewAnswer10.textContent = `- String method used to compare two strings in the same locale and returns a number indicating if the reference object comes before or after or is equal to string it is being compared to`
+
+let a = 'hello';
+let b = 'world';
+console.log(a.localeCompare(b))//b comes after a
+console.log(b.localeCompare(a))//a comes before b
 console.log('')
 
 
