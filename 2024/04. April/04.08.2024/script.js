@@ -75,7 +75,7 @@ console.log('')
 
 
 //3.
-reviewQuestion3.textContent = '3. parentElement.insertBefore(newElement, referenceElement'
+reviewQuestion3.textContent = '3. parentElement.insertBefore(newElement, referenceElement)'
 console.log('3. parentElement.insertBefore(newElement, referenceElement')
 console.log('DOM method allows for new elements to be added to the DOM befire a provided reference element')
 
@@ -201,33 +201,60 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
+codewarsQuestion1.textContent = '1. Trim a String - create a function thast will trim a string if it is longer than the rewuested max length, and end the string with "..."'
+console.log('1. Trim a String - create a function thast will trim a string if it is longer than the rewuested max length, and end the string with "..."')
+
 console.log('')
 
 codewarsAnswer1.textContent = `- `
+
+let trimString = (string, length) => {
+    console.log(string.trim().slice(0, length) + ' ...')
+}
+trimString('hello world', 5)
+
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
+codewarsQuestion2.textContent = '2. Remove String Spaces - write a function that removes the spaces from a string'
+console.log('2. Remove String Spaces - write a function that removes the spaces from a string')
 console.log('')
 
 codewarsAnswer2.textContent = `- `
+
+let removeSpace = (string) => {
+    console.log(string.replaceAll(' ', ''))
+}
+
+removeSpace('h e l l o w o r l d')
+
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
+codewarsQuestion3.textContent = '3. Feast of Many Beasts - write a function thact checks a name against an object.  if the name and object ahve the same first and last letter, return true, else return false'
+console.log('3. Feast of Many Beasts - write a function thact checks a name against an object.  if the name and object ahve the same first and last letter, return true, else return false')
 console.log('')
 
 codewarsAnswer3.textContent = `- `
+
+let feast = (animal, dish) => {
+    if(animal[0] === dish[0] && 
+        animal[animal.length - 1] === dish[dish.length - 1]) {
+        console.log(true)
+    } 
+    else {
+        console.log(false)
+    } 
+}
+
+feast('blue', 'blue')
+
 console.log('')
 
 
@@ -235,11 +262,17 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
+codewarsQuestion4.textContent = '4. Remove First and Last Character - create a functon that removes the first and last character of a string'
+console.log('4. Remove First and Last Character - create a functon that removes the first and last character of a string')
 console.log('')
 
 codewarsAnswer4.textContent = `- `
+
+let removeFirstAndLast = (string) => {
+    console.log(string.slice(1, -1))
+}
+removeFirstAndLast('hello')
+
 console.log('')
 
 
@@ -247,11 +280,32 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
+codewarsQuestion5.textContent = '5. Rock Paper Scissors - write a RPS game and return a winner'
+console.log('5. Rock Paper Scissors - write a RPS game and return a winner')
 console.log('')
 
 codewarsAnswer5.textContent = `- `
+
+let game = () => {
+    bot = Math.random();
+    if(bot <= .33) {
+        return 'rock'
+    }
+    else if(bot <= .66) {
+        return 'paper'
+    }
+    else if(bot > .66) {
+        return 'scissor'
+    }
+    else if(bot === 'rock' && player === 'paper' || bot === 'paper' && player === 'scissor' || bot === 'scissor' || player === 'rock') {
+        console.log('player wins')
+    }
+    else {
+        console.log('bot wins')
+    }
+}
+game()
+
 console.log('')
 
 
