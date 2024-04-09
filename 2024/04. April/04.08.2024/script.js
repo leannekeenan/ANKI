@@ -287,22 +287,46 @@ console.log('')
 codewarsAnswer5.textContent = `- `
 
 let game = () => {
-    bot = Math.random();
+    let bot = Math.random();
     if(bot <= .33) {
-        return 'rock'
+        bot = 'rock'
     }
     else if(bot <= .66) {
-        return 'paper'
+        bot = 'paper'
     }
     else if(bot > .66) {
-        return 'scissor'
+        bot = 'scissors'
     }
-    else if(bot === 'rock' && player === 'paper' || bot === 'paper' && player === 'scissor' || bot === 'scissor' || player === 'rock') {
-        console.log('player wins')
-    }
-    else {
-        console.log('bot wins')
-    }
+
+    
+
+     let player = Math.random();
+     if(player <= .33) {
+         player = 'rock'
+     }
+     else if(player <= .66) {
+         player = 'paper'
+     }
+     else {
+         player = 'scissors'
+     }
+
+     console.log(`bot: ${bot}`);
+     console.log(`player: ${player}`)
+
+     if(player === bot) {
+        console.log('tie')
+     }
+     else if(bot === 'rock' && player === 'paper' ||
+     bot === 'paper' && player === 'scissors' ||
+     bot === 'scissors' && player === 'rock') {
+        console.log(`player wins`)
+     }
+     else if (player === 'rock' && bot === 'paper' ||
+     player === 'paper' && bot === 'scissors' ||
+     player === 'scissors' && bot === 'rock') {
+        console.log(`bot wins`)
+     }
 }
 game()
 
