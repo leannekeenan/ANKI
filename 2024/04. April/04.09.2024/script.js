@@ -400,9 +400,55 @@ console.log('')
 //10.
 reviewQuestion10.textContent = '10. Write the fetch syntax'
 console.log('10. Write the fetch syntax')
-console.log('')
+console.log(`
+let elementFromDom = document.createElement('button');
+document.body.appendChild(elementFromDom);
+elementFromDom.textContent = 'fetchSyntax'
+elementFromDom.addEventListener('click', getFetch);
 
-reviewAnswer10.textContent = `- `
+function getFetch() {
+    let url = "https://google.com";
+
+   fetch(url)
+   .then(res => {
+    if(!res.ok) {
+        throw new Error('this is an error')
+    }
+    return res.json();
+   })
+   
+   .then(data => {
+    //where data from the stated website will be gathered for return
+   })
+   
+   .catch(error => {
+    console.log(Error, error)
+   })
+          
+}
+`)
+
+reviewAnswer10.textContent = `
+let elementFromDom = document.createElement('button');
+document.body.appendChild(elementFromDom);
+elementFromDom.textContent = 'fetchSyntax'
+elementFromDom.addEventListener('click', getFetch);
+
+function getFetch() {
+    let url = "https://google.com";
+   fetch(url).then(res => {
+    if(!res.ok) {
+        throw new Error('this is an error')
+    }
+    return res.json();
+   }).then(data => {
+
+   }).catch(error => {
+    console.log(Error, error)
+   })
+          
+}
+`
 let elementFromDom = document.createElement('button');
 document.body.appendChild(elementFromDom);
 elementFromDom.textContent = 'fetchSyntax'
@@ -453,33 +499,196 @@ console.log('Codewars Challenges')
 
 
 //1.
-codewarsQuestion1.textContent = '1. '
-console.log('1. ')
+codewarsQuestion1.textContent = '1. Trim a string - write a function that eill trim a string if it is longer than the maximum string length.  End the string with "..."'
+console.log('1. Trim a string - write a function that eill trim a string if it is longer than the maximum string length.  End the string with "..."')
 console.log('')
 
 codewarsAnswer1.textContent = `- `
+
+let trimAString = (string, maxLength) => {
+    let trimmed = string.slice(0, maxLength) + ' ...';
+    console.log(trimmed)
+}
+trimAString('hello world', 5)
+
 console.log('')
 
 
 
 
 //2.
-codewarsQuestion2.textContent = '2. '
-console.log('2. ')
+codewarsQuestion2.textContent = '2. ATM - write a function that models an ATM machine that can honor withdrawls between 01 and 1500 dollars with the least number of bamk note biills possible'
+console.log('2. ATM - write a function that models an ATM machine that can honor withdrawls between 01 and 1500 dollars with the least number of bamk note biills possible')
 console.log('')
 
 codewarsAnswer2.textContent = `- `
+
+let ATM = (withdrawl) => {
+    let count = 0;
+    let bills = [100, 50, 20, 10, 5, 1];
+
+    for(let i = 0; i < bills.length; i++) {
+        count += Math.floor(withdrawl % bills[i])
+        withdrawl /= bills[i]
+       
+    }
+    console.log(count)
+}
+ATM(101)
+
 console.log('')
 
 
 
 
 //3.
-codewarsQuestion3.textContent = '3. '
-console.log('3. ')
-console.log('')
+codewarsQuestion3.textContent = '3. Rock Paper Scissor'
+console.log('3. Rock Paper Scissor')
+console.log(`
+let game = () => {
 
-codewarsAnswer3.textContent = `- `
+    //randomizer for both players
+    let bot = Math.random();
+    let player = Math.random();
+
+
+//function for bot randomizer
+    if(bot <= .33) {
+        bot  = 'rock';
+    }
+    else if(bot <= .66) {
+        bot  = 'paper';
+    }
+    else {
+        bot = 'scissors';
+    }
+
+    //function for player randomizer
+
+    if(player <= .33) {
+        player  = 'rock';
+    }
+    else if(player <= .66) {
+        player  = 'paper';
+    }
+    else {
+        player = 'scissors';
+    }
+    console.log(bot);
+    console.log(player) 
+    ;
+
+    //game Function
+
+    if(bot === 'rock' && player === 'paper' || bot === 'paper' && player === 'scissors' || bot === 'scissors' && player === 'rock') {
+        console.log('player wins')
+    }
+    else if(player === bot) {
+        console.log('tie')
+    }
+    else {
+        console.log('bot wins')
+    }
+}
+game()
+`)
+
+codewarsAnswer3.textContent = `
+let game = () => {
+
+    //randomizer for both players
+    let bot = Math.random();
+    let player = Math.random();
+
+
+//function for bot randomizer
+    if(bot <= .33) {
+        bot  = 'rock';
+    }
+    else if(bot <= .66) {
+        bot  = 'paper';
+    }
+    else {
+        bot = 'scissors';
+    }
+
+    //function for player randomizer
+
+    if(player <= .33) {
+        player  = 'rock';
+    }
+    else if(player <= .66) {
+        player  = 'paper';
+    }
+    else {
+        player = 'scissors';
+    }
+    console.log(bot);
+    console.log(player) 
+    ;
+
+    //game Function
+
+    if(bot === 'rock' && player === 'paper' || bot === 'paper' && player === 'scissors' || bot === 'scissors' && player === 'rock') {
+        console.log('player wins')
+    }
+    else if(player === bot) {
+        console.log('tie')
+    }
+    else {
+        console.log('bot wins')
+    }
+}
+game()
+`
+
+let game = () => {
+
+    //randomizer for both players
+    let bot = Math.random();
+    let player = Math.random();
+
+
+//function for bot randomizer
+    if(bot <= .33) {
+        bot  = 'rock';
+    }
+    else if(bot <= .66) {
+        bot  = 'paper';
+    }
+    else {
+        bot = 'scissors';
+    }
+
+    //function for player randomizer
+
+    if(player <= .33) {
+        player  = 'rock';
+    }
+    else if(player <= .66) {
+        player  = 'paper';
+    }
+    else {
+        player = 'scissors';
+    }
+    console.log(bot);
+    console.log(player) 
+    ;
+
+    //game Function
+
+    if(bot === 'rock' && player === 'paper' || bot === 'paper' && player === 'scissors' || bot === 'scissors' && player === 'rock') {
+        console.log('player wins')
+    }
+    else if(player === bot) {
+        console.log('tie')
+    }
+    else {
+        console.log('bot wins')
+    }
+}
+game()
+
 console.log('')
 
 
@@ -487,11 +696,27 @@ console.log('')
 
 
 //4.
-codewarsQuestion4.textContent = '4. '
-console.log('4. ')
+codewarsQuestion4.textContent = '4. Points per game - write a constructor function to build NBA players with a name, tam and points score. Write a second function to total the points per game from both players made from the constructor function'
+console.log('4. Points per game - write a constructor function to build NBA players with a name, tam and points score. Write a second function to total the points per game from both players made from the constructor function')
 console.log('')
 
 codewarsAnswer4.textContent = `- `
+
+function NBAPlayers (player, team, score) {
+    this.player = player,
+    this.team = team,
+    this.score = score
+}
+let p1 = new NBAPlayers('palyer1', 'team A', 205);
+let p2 = new NBAPlayers('player2', 'teamA', 107);
+
+function PPG(p1, p2) {
+   console.log( p1.score + p2.score)
+}
+
+
+
+PPG(p1, p2)
 console.log('')
 
 
@@ -499,11 +724,24 @@ console.log('')
 
 
 //5.
-codewarsQuestion5.textContent = '5. '
-console.log('5. ')
+codewarsQuestion5.textContent = '5. Feast of many beasts - write a function that checks the first and last characters of two strings. If they match, return true - else return false'
+console.log('5. Feast of many beasts - write a function that checks the first and last characters of two strings. If they match, return true - else return false')
 console.log('')
 
 codewarsAnswer5.textContent = `- `
+
+let feast = (string1, string2) => {
+   if(string1[0] === string2[0] && string1[string1.length - 1] === string2[string2.length - 1]) {
+    console.log(true)
+   }
+   else {
+    console.log(false)
+   }
+}
+
+feast('bag', 'bag')
+feast('bag', 'bowl')
+
 console.log('')
 
 
