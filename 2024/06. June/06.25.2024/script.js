@@ -77,6 +77,7 @@ console.log('3. Cypher - Write a cypher that returns a word using different lett
 console.log('')
 
 let cypher = (string) => {
+    //"replace the characters in the string (insensitive & global) with a character code that when converted to a string can provide the character code from the the character at the position of the string character in question, and add 13 to the character position value"
     return string.replace(/[a-z]/ig, character => String.fromCharCode((character.charCodeAt(0) + 13)))
 }
 
